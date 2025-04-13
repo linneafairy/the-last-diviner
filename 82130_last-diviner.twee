@@ -1,0 +1,72 @@
+:: StoryTitle
+82130_last-diviner
+
+
+:: StoryData
+{
+  "ifid": "ADF1B63A-878D-4754-9D8C-C744A3E414BD",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "intro",
+  "zoom": 1
+}
+
+
+:: apologize {"position":"775,575","size":"100,100"}
+You give her a small smile, brows furrowed, and explain that you came in the front door because you didn't have a key to the staff entrance yet.  Telling you not to worry about it, she leads you to her office at the far end of the hall.  There is paperwork for you, but not as much as you'd feared.  Your boss explains that you'll mostly be working offsite at the museum's storage facility, but this morning she'll show you around the main building.  In the afternoon you'll both go offsite and she'll get you settled in there.
+
+The rest of the morning is a bit of a blur, but it's not all bad.  You get to see the museum's current exhibits and learn about the curators and staff for each of them.  One of the exhibits will be closing in a few months, and you're part of the team in charge of putting together a new exhibit.  The museum wants to display their collection of [[oracle bones]], and every exhibit needs historical context and an engaging story.
+
+
+:: go inside {"position":"700,450","size":"100,100"}
+The door opens into a large atrium.  The high ceilings are gently slanted and dotted with skylights, and big potted plants stand against the walls.  Groups of visitors pass by, chatting amongst themselves.  Their talk echoes and each of your steps feel very loud.
+
+You concentrate on remembering the way to the offices, head down.  The stairwell is quieter, and the staff-only hallway is near silent.  You try not to worry.
+
+You wander down the hall, looking for your supervisor's name on the placquards at the doors.  You only make it a few feet when you almost bump into her, stumbling back and apologizing.  You realize you're a little late, but she's smiling and seems unbothered.
+
+Should you [[smile back and greet her normally|smile]]? Or should you [[greet her respectfully and apologize for being late to your first shift|apologize]]?
+
+
+:: intro {"position":"700,325","size":"100,100"}
+//~ July 25, 2022 ~//
+//~ In transit ~//
+
+
+You're on the bus, on your way to work.  It's your first day, in fact – the first day of your first real job out of [[school]].  Nerves are making you squirm in your seat.  You swear it's ten degrees hotter inside the bus than outside.
+
+As the minutes crawl by, the buildings get taller until you're in the city proper.  You stare at the rippling reflection of the bus as it passes storefront windows and glass-sided skyscrapers.  You snap out of it just in time to pull the cord for your stop.  Pushing past other riders, you step out on to the street and start walking.
+
+You stop outside the [[museum]] and take a deep breath.  Shouldering your bag, you [[go inside]].
+
+
+:: lunch {"position":"700,825","size":"100,100"}
+lunch uwu
+
+
+:: museum {"position":"825,375","size":"100,100"}
+You're at the front entrance of the Museum of the Written Record, eyeing the imposing façade and the perfectly-trimmed hedges.  The museum you grew up with was small and inviting.  This one is much larger.  It's probably more inviting on the inside, but right now it feels intimidating.
+
+You pull yourself out of that train of thought and exhale shakily.  [[You can do this.|intro]]
+
+
+:: oracle bones {"position":"700,700","size":"100,100"}
+Upon hearing this, all your worries disappear, shoved out by excitement.  You bounce on the balls of your feet and try not to smile like a kid in a candy shop.  This is exactly what you'd hoped for when you applied for the job.  Your brain is already starting to think of various ways to frame the exhibit and tell a story about it.
+
+You barely register the fact that you're back in your supervisor's office.  She tells you to take lunch and meet her back here in half an hour so she can take you offsite.  Thanking her, you grab your sunhat and bag and [[head out in search of lunch.|lunch]]
+
+
+:: school {"position":"825,250","size":"100,100"}
+You're fresh out of a master's program in museum studies, specializing in archival work and collections management.  Sure, you've spent a semester or two working in your field already, but those were minor projects for class credit.  This is the real deal.
+
+You were hired by the Museum of the Written Record to work in their East Asia collection, full of things you've never seen before.  Imagining the contents of the collection is exciting.  Some of this stuff is thousands of years old.  And probably breakable.
+
+You hold out your hands and watch them tremble.  Hopefully you won't have to handle any actual materials today.  It'll probably just be a lot of paperwork and introductions to coworkers.
+
+[[You glance out the window and try not to think about it too much.|intro]]
+
+
+:: smile {"position":"625,575","size":"100,100"}
+You smile back and greet her as though nothing was wrong, and she leads you to her office at the far end of the hall.  There is paperwork for you, but not as much as you'd feared.  Your boss explains that you'll mostly be working offsite at the museum's storage facility, but this morning she'll show you around the main building.  In the afternoon you'll both go offsite and she'll get you settled in there.
+
+The rest of the morning is a bit of a blur, but it's not all bad.  You get to see the museum's current exhibits and learn about the curators and staff for each of them.  One of the exhibits will be closing in a few months, and you're part of the team in charge of putting together a new exhibit.  The museum wants to display their collection of [[oracle bones]], and every exhibit needs historical context and an engaging story.
