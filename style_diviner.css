@@ -41,7 +41,7 @@ body {
 
 .main { 
     grid-area: main; 
-    background-color: #456133;
+    background-color: #46311f;
     height: 60vh;
     text-align: center;
     overflow: auto;

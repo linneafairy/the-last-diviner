@@ -14,6 +14,7 @@
 		function unfade(hidden) {
 			element = document.getElementById(hidden)
 			var op = 0.1;  // initial opacity
+            element.style.opacity = op;
 			element.style.display = 'block';
 			var timer = setInterval(function () {
 				if (op >= 1){
@@ -48,11 +49,17 @@
 	</div>
 
 	<div class = "sidebar">
-	</div>≈
+	</div>
 
 	<div class = "main">
-	<div class="page" id="intro_message" style="display:block">
-        <div class="page" id="intro" style="display:block">
+	    <div class="page" id="intro_message" style="display:block">
+            The letter is offering you a position at the Museum of the Written Record.<br>
+            <br>
+            <img id="Img" src="images/letter_2.png" alt="bamboo slip scroll" style="width: 15vw" onclick="toggleImage('Img', 'images/letter_1.png', 'images/letter_2.png');"> <br>
+            <br><br>
+            <a href="#" onclick="return show('intro','intro_message');">Accept offer.</a>
+        </div>
+        <div class="page" id="intro" style="display:none">
             You're on the bus, on your way to work.  It's your first day, in fact -- the first day of your first real job out of <a href="#" onclick="return show('school','intro');">school</a>.  Nerves are making you squirm in your seat.  You swear it's ten degrees hotter inside the bus than outside.
 
             <br><br>As the minutes crawl by, the buildings get taller until you're in the city proper.  You stare at the rippling reflection of the bus as it passes storefront windows and glass-sided skyscrapers.  You snap out of it just in time to pull the cord for your stop.  Pushing past other riders, you step out on to the street and start walking.
@@ -75,6 +82,7 @@
         <div class="page" id="go_inside" style="display:none">
             The door opens into a large atrium.  The high ceilings are gently slanted and dotted with skylights, and big potted plants stand against the walls.  Groups of visitors pass by, chatting amongst themselves.  Their talk echoes and each of your steps feels very loud.
             <br><br>You concentrate on remembering the way to the offices, head down.  The stairwell is quieter, and the staff-only hallway is near silent.  You try not to worry.
+            <br><br><IMG SRC="images/hallway.png" width="300"/>
             <br><br>You wander down the hall, looking for your supervisor's name on the placards at the doors.  You only make it a few feet when you almost bump into her, stumbling back and apologizing.  You realize you're a little late, but she's smiling and seems unbothered.
             <br><br>Should you <a href="#" onclick="return show('smile','go_inside');">smile back and greet her normally?</a> Or should you <a href="#" onclick="return show('apologize','go_inside');">greet her respectfully and apologize for being late to your first shift?</a>
         </div>

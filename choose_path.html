@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style_titlepg.css">
+  <script>
+    function toggleImage(id, src1, src2) {
+        if (document.getElementById(id).src.endsWith(src1)){
+            document.getElementById(id).src = src2;
+        } else {
+            document.getElementById(id).src = src1;
+        }
+    }
+
+    function unfade(hidden) {
+        element = document.getElementById(hidden)
+        var op = 0.1;  // initial opacity
+        element.style.opacity = op;
+        element.style.display = 'block';
+        var timer = setInterval(function () {
+            if (op >= 1){
+                clearInterval(timer);
+            }
+            element.style.opacity = op;
+            element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op += op * 0.1;
+        }, 10);
+    }
+  </script>
+
+  <style>
+    @font-face {
+      font-family: 'Typeface'; 
+      src: url('typescript.ttf')  format('truetype'), /* Safari, Android, iOS */
+    }
+
+    html {
+        font-family: 'Typeface';
+        font-size: 25px;
+        line-height: 1;
+        color: #eee;
+        background-color: rgb(17,17,17); /* #456133 <-green #46311f <-brown rgb(17,17,17) */
+        overflow: auto;
+        white-space: pre-wrap;
+    }
+
+    .wrapper {
+      background-color: rgb(17,17,17);
+      text-align: center;
+      display: grid;
+      width: 100%;
+      height: 100%;
+      gap: 1fr;
+      grid-template-columns: 4fr 4fr;
+      grid-template-rows: 3rem 4fr;
+      grid-template-areas:
+        'header header'
+        'start1 start2';
+    }
+
+    .start1 { 
+      grid-area:start1; 
+      text-align: center;
+      height:5fr;
+      overflow: auto;
+      /*border: 10px inset #456133;  #A8B57B green ->#456133*/
+      /*border-radius: 2%;*/
+      padding:20px;
+    }
+
+    .start2 { 
+      grid-area:start2; 
+      text-align: center;
+      height:5fr;
+      overflow: auto;
+      /*border: 10px inset #46311f;  #A8B57B brown ->#46311f*/
+      /*border-radius: 2%;*/
+      padding:20px;
+    }
+
+    a {
+        color: #68d;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    a:hover {
+        color: #8af;
+        text-decoration: underline;
+    }
+    img {
+        float: center;
+        width:  20vw;
+        height: 15vw;
+        object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="header"></div>
+
+<div class = "start1">Start in the past.
+
+<img id="scroll" src="images/msg1.png" alt="bamboo slip scroll" style="height: 15vw" onclick="toggleImage('scroll', 'images/msg1.png', 'images/msg2.png');unfade('link_1')">
+<br>
+<div id="link_1", style="display:none"><a href="diviner.html">Read message.</a></div>
+</div>
+
+<div class="start2">Start in the present.
+
+<img id="letter" src="images/letter_1.png" alt="letter" style="width: 15vw" onclick="toggleImage('letter', 'images/letter_1.png', 'images/letter_2.png');unfade('link_2')">
+<br>
+<div id="link_2", style="display:none"><a href="museum.html">Read message.</a></div>
+</div>
+</div>
+</body>
+</html> 

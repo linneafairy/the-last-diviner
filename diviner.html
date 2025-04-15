@@ -4,7 +4,6 @@
 	<title>The Last Diviner</title>
 
 	<script>
-
 		function show(shown, hidden) {
 			document.getElementById(shown).style.display='block';
 			document.getElementById(hidden).style.display='none';
@@ -52,16 +51,12 @@
 
 	<div class = "main">
 	<div class="page" id="intro_message" style="display:block">
-		The Qiang leadership has recieved a message from the King of Shang. <br>
+		The Qiang leadership has recieved a message from the King of Shang. 
+		The message demands a Qiang diviner be sent to Zhaoge to serve the king.<br>
 		<br>
-		<img id="Img" src="images/msg1.png" alt="bamboo slip scroll" style="height: 15vw" onclick="toggleImage('Img', 'images/msg1.png', 'images/msg2.png');unfade('link')"> <br>
-		<i>Click to unroll.</i><br>
-		<div id="link", style="display:none"> 
-			<br>
-			The message demands a Qiang diviner be sent to Zhaoge to serve the king.<br>
-			<br>
-			<a href="#" onclick="return show('arrive','intro_message');">Go to Zhaoge.</a>
-		</div>
+		<img id="Img" src="images/msg2.png" alt="bamboo slip scroll" style="height: 15vw" onclick="toggleImage('Img', 'images/msg2.png', 'images/msg1.png');"> <br>
+		<br><br>
+		<a href="#" onclick="return show('arrive','intro_message');">Volunteer to go.</a>
 	</div>
 	<div class="page" id="arrive" style="display:none">
 		The Sun scorches. The wrath of a summer heat creeps into your confining carriage, unkindly towards your roots in the <a href="#" onclick="return show('think_of_qiang','arrive');"> sheperding state Qiang.</a>
@@ -147,6 +142,7 @@
 	</div>
 	<div class="page" id="gossip_daji" style="display:none">
 		"The King did not care if you brought precious tributes?" 
+		<br><br><IMG SRC="images/gossip.png" width="200"/>
 		<br><br>You nod to the servant. It surprises you then, when she chuckles, lifting her sleeve to cover the sound. She glances once more at the Queen pointedly, and you feel as if you've missed something important. 
 		<br><br>Another servant shoots a glare at her. "Be silent." She then turns to you with pursed lips. "The King does not care for much these days," she says. "None entertain him, with one exception."
 		<br><br>You feel your confusion growing as she hesitates. "And what's that?"
