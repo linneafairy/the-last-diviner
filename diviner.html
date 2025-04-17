@@ -4,24 +4,13 @@
 	<title>The Last Diviner</title>
 
 	<script>
+		function change_color(element) {
+			element.style.color = 'grey';
+		}
+
 		function show(shown, hidden) {
 			document.getElementById(shown).style.display='block';
 			document.getElementById(hidden).style.display='none';
-			return false;
-		}
-
-		function unfade(hidden) {
-			element = document.getElementById(hidden)
-			var op = 0.1;  // initial opacity
-			element.style.display = 'block';
-			var timer = setInterval(function () {
-				if (op >= 1){
-					clearInterval(timer);
-				}
-				element.style.opacity = op;
-				element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-				op += op * 0.1;
-			}, 10);
 		}
 
 		function changeText(id, newtext){
@@ -47,25 +36,25 @@
 		<br>
 		<img id="scroll_img" src="images/msg2.png" alt="bamboo slip scroll" style="height: 15vw" onclick="toggleImage('scroll_img', 'images/msg2.png', 'images/msg1.png');"> <br>
 		<br><br>
-		<a href="#" onclick="return show('arrive','intro_message');">Volunteer to go.</a>
+		<a href="#" id="page_switch" onclick="this.style.color = 'red'; show('arrive','intro_message');change_color(this)">Volunteer to go.</a>
 	</div>
 	<div class="page" id="arrive" style="display:none">
-		The Sun scorches. The wrath of a summer heat creeps into your confining carriage, unkindly towards your roots in the <a href="#" onclick="return show('think_of_qiang','arrive');"> sheperding state Qiang.</a>
-		You've been traveling no shorter than a month. Not only is the heat unbearable, you are also <a href="#" onclick="return show('buy_drink','arrive');">dying of thirst.</a>
+		The Sun scorches. The wrath of a summer heat creeps into your confining carriage, unkindly towards your roots in the <a href="#" id="page_switch" onclick="show('think_of_qiang','arrive');change_color(this)"> sheperding state Qiang.</a>
+		You've been traveling no shorter than a month. Not only is the heat unbearable, you are also <a href="#" onclick="show('buy_drink','arrive');change_color(this)">dying of thirst.</a>
 		<br><br>The tall gates of Zhaoge's stoic stone walls approach, like a halting general waiting for a weakness in your move. Your grip on your bags tightens as you see several mouse-like merchants eyeing you on the side of the road.  
 		<br><br>Finally, your carriage comes to a stop. A man approaches, greeting you as you step from the carriage.
 		<br><br>"Ah, yes! Finally, our esteemed guest from Qiang." He says. "Please, our King has been calling for you for days. Please come with me at once." The man hurries away, leaving you with heavy bags and no hands for help.
 		<br><br>
-		<a href="#" onclick="return show('enter_zhaoge','arrive');">Follow the man into Zhaoge.</a>
+		<a href="#" onclick="show('enter_zhaoge','arrive');change_color(this)">Follow the man into Zhaoge.</a>
 	</div>
 	<div class="page" id="think_of_qiang" style="display:none">
 		You find youself thinking of your home, not for the first time. 
 		<br> You rub the tips of your fingers together and feel the callouses worn by time. You learned to herd and build from a young age&mdash;all the children did. The callouses on your hands are a welcoming friend.
 		<br><br> Hardworking and diligent, your people have presented yourselves as peaceful nomadic sheep-herders under scrutiny of Shang Kings for generations. 
-		But growing up in the central city, you knew that there was <a href="#" onclick="return show('qiang_history','think_of_qiang');">more to your people</a> than simple sheperds. 
+		But growing up in the central city, you knew that there was <a href="#" onclick="show('qiang_history','think_of_qiang');change_color(this)">more to your people</a> than simple sheperds. 
 		<br><br> But you must not show it. Times are uncertain. It is much simpler to remain a diviner for Shang, chosen by the Qiang King's counselor&mdash;a regular occurence for your state affairs. 
 		<br> Other than so, you have no real ties to the Qiang court. 
-		<br><br><a href="#" onclick="return show('arrive','think_of_qiang');">You must return your wandering thoughts to the art of divination in the present.</a>
+		<br><br><a href="#" onclick="show('arrive','think_of_qiang');change_color(this)">You must return your wandering thoughts to the art of divination in the present.</a>
 	</div>
 
 	<div class="page" id="buy_drink" style="display:none">
@@ -74,30 +63,30 @@
 		<br><br>You ask once more and ensure him you will not take long, before leaving the carriage with your bag of cowrie shells. 
 		<br><br>Walking into the city, you glance around for a stand that sells beverages. Many shops sit before you and seem to encompass the whole area. The marketplace stops at the edge of your vision, where a column of black smoke rises in the distance.
 		You walk towards the nearest shop.
-		<br><br><a href="#" onclick="return show('pay_drink','buy_drink');">Ask to buy a drink</a>
-		<br><br><a href="#" onclick="return show('ask_smoke','buy_drink');">Ask about the smoke</a>
-		<br><br><a href="#" onclick="return show('ask_temperament','buy_drink');">Ask about the temperament of the Shang king</a>
+		<br><br><a href="#" onclick="show('pay_drink','buy_drink');change_color(this)">Ask to buy a drink</a>
+		<br><br><a href="#" onclick="show('ask_smoke','buy_drink');change_color(this)">Ask about the smoke</a>
+		<br><br><a href="#" onclick="show('ask_temperament','buy_drink');change_color(this)">Ask about the temperament of the Shang king</a>
 	</div>
 	<div class="page" id="pay_drink" style="display:none">
 		You offer him three cowrie shells for a bowl of rice wine. Parched as you are, you drain the bowl swiftly, and say your thanks.
-		<br><br><a href="#" onclick="return show('ask_smoke','pay_drink');">Ask about the smoke</a>
-		<br><br><a href="#" onclick="return show('ask_temperament','pay_drink');">Ask about the temperament of the Shang king</a>
-		<br><br><a href="#" onclick="return show('arrive','pay_drink');">Return to your carriage</a>
+		<br><br><a href="#" onclick="show('ask_smoke','pay_drink');change_color(this)">Ask about the smoke</a>
+		<br><br><a href="#" onclick="show('ask_temperament','pay_drink');change_color(this)">Ask about the temperament of the Shang king</a>
+		<br><br><a href="#" onclick="show('arrive','pay_drink');change_color(this)">Return to your carriage</a>
 	</div>
 	<div class="page" id="ask_smoke" style="display:none">
 		"Oh, that?" The shop owner lifts his head from the worktable. "That smoke is from where the King commissioned his palace of treasures, Lutai. All of them precious war spoils and gifts from other missionaries are there." 
 		<br><br>You glance again in the direction of the smoke. "Impressive. Do you recall when he started the construction?"
 		<br><br>The shop owner purses his lips yet still does not look up. You get the impression that he is not impressed. "Not a clue. Since I started working at this spot the smoke's been there. Are you buying a drink or not?" 
-		<br><br><a href="#" onclick="return show('ask_temperament','ask_smoke');">Ask about the temperament of the Shang king</a>
-		<br><br><a href="#" onclick="return show('arrive','ask_smoke');">Return to your carriage</a>
+		<br><br><a href="#" onclick="show('ask_temperament','ask_smoke');change_color(this)">Ask about the temperament of the Shang king</a>
+		<br><br><a href="#" onclick="show('arrive','ask_smoke');change_color(this)">Return to your carriage</a>
 	</div>
 	<div class="page" id="ask_temperament" style="display:none">
 		"He's unlike none I've seen before, I'll tell you that." The shop owner says, his hands steadily grinding condiments into a stone bowl. "Always out there with them soldiers, keeping the states in line. Some say he's dedicated, loyal."
 		<br><br>"Some?" You ask.
 		<br><br>The man makes a face. "Others call him violent and cruel, of course. Common hearsay for a King who conquers."
-		<br><br><a href="#" onclick="return show('ask_smoke','ask_temperament');">Ask about the smoke</a>
-		<br><br><a href="#" onclick="return show('pay_drink','ask_temperament');">Ask to buy a drink</a>
-		<br><br><a href="#" onclick="return show('arrive','ask_temperament');">Return to your carriage</a>
+		<br><br><a href="#" onclick="show('ask_smoke','ask_temperament');change_color(this)">Ask about the smoke</a>
+		<br><br><a href="#" onclick="show('pay_drink','ask_temperament');change_color(this)">Ask to buy a drink</a>
+		<br><br><a href="#" onclick="show('arrive','ask_temperament');change_color(this)">Return to your carriage</a>
 	</div>
 	<div class="page" id="qiang_history" style="display:none">
 		"...As one of the oldest nations, part of the Qiang people's ancestry came from the famous Yan Emperor. 
@@ -106,7 +95,7 @@
 		<br> The rest of Yan's descendents, unwilling to bend, moved west or south and became ancestors of Northern ethnic groups, becoming known for their resilience. Their tribes were many, such as..."
 		<br><br> &mdash;Zhang Qian
 		<br><br>
-		<a href="#" onclick="return show('arrive','qiang_history');">Return to your journey.</a>
+		<a href="#" onclick="show('arrive','qiang_history');change_color(this)">Return to your journey.</a>
 	</div>
 	<div class="page" id="enter_zhaoge" style="display:none">
 		You follow the man into the walls of Zhaoge, hefting your bags onto your shoulders.
@@ -115,22 +104,22 @@
 		Will he be a benevolent prescence to you and your state?
 		<br><br>The man has stopped. You stop by instinct, and raise your head to the King's gaze. 
 		<br><br>Too late did you realize that the Qiang court did not equip you with valuable tribute such as precious jewelry or rare metals. 
-		<br><br><a href="#" onclick="return show('traditional_bow','enter_zhaoge');">Execute the traditional Shang bow as you've been trained, and be truthful with the King.</a>
-		<br><br><a href="#" onclick="return show('low_bow','enter_zhaoge');">Execute a lower bow than needed and add an apologetic tone to your greeting.</a>
+		<br><br><a href="#" onclick="show('traditional_bow','enter_zhaoge');change_color(this)">Execute the traditional Shang bow as you've been trained, and be truthful with the King.</a>
+		<br><br><a href="#" onclick="show('low_bow','enter_zhaoge');change_color(this)">Execute a lower bow than needed and add an apologetic tone to your greeting.</a>
 	</div>
 	<div class="page" id="traditional_bow" style="display:none">
 		The King scoffs at you, but does not shout of impertinence; in fact, it seems he barely addresses your arrival. He brusquely requests your leave. 
 		<br><br><i>He does not care for your precious items, yet you've heard with your own ears that he favors treasures from expedition. He does not care of your arrival, yet he demanded it urgently...</i>
 		<br><br>Feeling unsettled, you roam around the palace in search of your settlement space. 
 		Along the way, you see the courtiers whispering at the back of a woman. She is well-dressed with fine gowns lined in gold, designs of phoenixes swirling by the sleeve at her wrists. She must be Queen Jiang. 
-		<br>A crowd of servants gathered, fierce whispers flowing about. From the way their gazes dance in the Queen's direction, they must be <a href="#" onclick="return show('gossip_daji','traditional_bow');">gossiping</a>&mdash;you have no clue what for.
+		<br>A crowd of servants gathered, fierce whispers flowing about. From the way their gazes dance in the Queen's direction, they must be <a href="#" onclick="show('gossip_daji','traditional_bow');change_color(this)">gossiping</a>&mdash;you have no clue what for.
 	</div>
 	<div class="page" id="low_bow" style="display:none">
 		The King scoffs at your groveling, but does not taunt or lecture; in fact, it seems he barely addresses your arrival. He brusquely requests your leave. 
 		<br><br><i>He does not care for your precious items, yet you've heard with your own ears that he favors treasures from expedition. He does not care of your arrival, yet he demanded it urgently...</i>
 		<br><br>Feeling unsettled, you roamed around the palace in search of your settlement space. 
 		Along the way, you see the courtiers whispering at the back of a woman. She is well-dressed with fine gowns lined in gold, designs of pheonixes swirling by the sleeve at her wrists. She must be Queen Jiang. 
-		<br>A crowd of servants gathered, fierce whispers flowing about. From the way their gazes dance in the Queen's direction, they must be <a href="#" onclick="return show('gossip_daji','low_bow');">gossiping</a>&mdash;you have no clue what for.
+		<br>A crowd of servants gathered, fierce whispers flowing about. From the way their gazes dance in the Queen's direction, they must be <a href="#" onclick="show('gossip_daji','low_bow');change_color(this)">gossiping</a>&mdash;you have no clue what for.
 	</div>
 	<div class="page" id="gossip_daji" style="display:none">
 		"The King did not care if you brought precious tributes?" 
@@ -140,7 +129,7 @@
 		<br><br>You feel your confusion growing as she hesitates. "And what's that?"
 		<br><br>"Not what," the first servant smirks. "But who&mdash;a woman. Only Su Daji's dances appeal to the King. Such power...in the hands of a consort."
 		<br><br>You thank them and resume your trek to your settlement in the palace. After half a moment, you finally come upon your room. 
-		Tired and drained from the long journey, you feel your rigid back weaken at the sight of your bed. Weary as you are, you <a href="#" onclick="return show('first_divination','gossip_daji');">drift into the arms of dreams.</a>
+		Tired and drained from the long journey, you feel your rigid back weaken at the sight of your bed. Weary as you are, you <a href="#" onclick="show('first_divination','gossip_daji');change_color(this)">drift into the arms of dreams.</a>
 	</div>
 	<div class="page" id="first_divination" style="display:none">
 		You were wrong about the King, it seems.
@@ -149,14 +138,14 @@
 		<br>You stand in front of the royal palace, your back against his tall form as your hands hovering under a prepared scapula, holding a torched hardwood brand that's slowly biting a dip in its underside. 
 		<br><br>"Tell me," the King had said, his body draped over the carved throne, the infamous Daji to his side, her palm massaging into his shoulders. "Will the Shang thrive on in glory?" 
 		And as lazy his tone was as his form, the steel in his eyes chills you.
-		You feel his stare even now, unseeing his face. But no matter. To you, the oracle bone's ritual process has been written into your mind, from <a href="#" onclick="return show('learned_divination','first_divination');">years of practice back in the Qiang state.</a>
+		You feel his stare even now, unseeing his face. But no matter. To you, the oracle bone's ritual process has been written into your mind, from <a href="#" onclick="show('learned_divination','first_divination');change_color(this)">years of practice back in the Qiang state.</a>
 		<br><br>Your hand moves almost mindlessly, aligning the scorched hollows from bottom to top as your eyes search for patterns, cracks, signs.
-		<br><br>The preparations are soon finished in making. <a href="#" onclick="return show('read_bone_1','first_divination');">You lean forward to take a look at the cracks.</a>
+		<br><br>The preparations are soon finished in making. <a href="#" onclick="show('read_bone_1','first_divination');change_color(this)">You lean forward to take a look at the cracks.</a>
 	</div>
 	<div class="page" id="learned_divination" style="display:none">
 		In your memory, the life back home at Qiang was peaceful. While news of war raged, you can recall no turmoil from your childhood, nothing more than a rumor passing through the streets. 
 		<br><br>You'd practiced and learned the art of oracle bone divination in those times, underneath the bright blue skies, often finding yourself tracing bone patterns into the dirt besides your legs as you herded the cattle. 
-		<br><br>Now, those days seemed distant and faraway from the halls of <a href="#" onclick="return show('first_divination','learned_divination');">the imperial palace.</a>
+		<br><br>Now, those days seemed distant and faraway from the halls of <a href="#" onclick="show('first_divination','learned_divination');change_color(this)">the imperial palace.</a>
 	</div>
 	<div class="page" id="read_bone_1" style="display:none">
 		As you run your eyes over the bone, you frown at how there are far more ominous cracks than auspicious ones.
@@ -164,8 +153,8 @@
 		You know that if you leave the ominous cracks without inscriptions, the King will read this bone as a sign of the state's ill-boding fate instead of a glorious future. 
 		You hesitate, and the King's chilling stare urges you to complete the ritual.
 		<br><br><img id="bone_img" src="images/bone2.png" alt="oracle bone" style="height: 15vw" onclick="toggleImage('bone_img', 'images/bone2.png', 'images/bone3.png');"> <br>
-		<br><a href="#" onclick="return show('good_outlook_1','read_bone_1');">You decide to inscribe the good omens as well as the ominous cracks as auspicious.</a>
-		<br><br><a href="#" onclick="return show('bad_outlook_1','read_bone_1');">You decide to inscribe the good omens but leave out the ominous cracks, as it is meant to be.</a>
+		<br><a href="#" onclick="show('good_outlook_1','read_bone_1');">You decide to inscribe the good omens as well as the ominous cracks as auspicious.</a>
+		<br><br><a href="#" onclick="show('bad_outlook_1','read_bone_1');">You decide to inscribe the good omens but leave out the ominous cracks, as it is meant to be.</a>
 	</div>
 	<div class="page" id="good_outlook_1" style="display:none">
 		<br>With a bow, a servant presents your bone to the King. As you watch in anticipation, a thunderous laughter escapes from him, the sound only pausing when the King takes a long swig of wine from the goblet in his hand. 
@@ -183,16 +172,16 @@
 		<br><br>"Well, I witnessed your skill at divination just a few moments ago, and I wished to know you, of course," says the prince. 
 		"I have always been curious of the process. Won't you join me for a walk in the marketplace?"
 		You are astounded. The prince himself wishes to speak with you as a companion to the city?
-		<br><br><a href="#" onclick="return show('accept_prince','good_outlook_1');">"Of course, your Highness. I thank you for your guidance."</a>
-		<br><br><a href="#" onclick="return show('decline_prince','good_outlook_1');">"I'm grateful for your offer, but won't it trouble your time?"</a>
+		<br><br><a href="#" onclick="show('accept_prince','good_outlook_1');change_color(this)">"Of course, your Highness. I thank you for your guidance."</a>
+		<br><br><a href="#" onclick="show('decline_prince','good_outlook_1');change_color(this)">"I'm grateful for your offer, but won't it trouble your time?"</a>
 		</div>
 	<div class="page" id="decline_prince" style="display:none">
 		"Well, worry not, for I have time today for a short trip, if not anything," says the prince, before heading towards the gates. "Let us go, then." You follow suit, curious of the city as much as of the prince. 
 		<br><br><i>Why is he taking such an interest in you, a modest diviner?</i>
 		<br><br>The pair of you trek across streets, where busy tradesmen call to passerby and haggle prices. Your eyes wander at all the various dishes and jewlery. Far off in the distance, a column of black smoke rises, just as it has always been every morning out your window since your arrival.	
 		<br><br>Sure enough, the prince asks you questions about your divinations, and how you indicate the good fortune versus the bad. You answer his queries one by one, yet you find yourself thinking of questions of your own as well.
-		<br><br><a href="#" onclick="return show('visit_lutai','decline_prince');">"I'm curious of that smoke, your Highness. Can we go to where it is rising?"</a>
-		<br><br><a href="#" onclick="return show('prince_praise_king','decline_prince');"> "Your Highness, why are you so intrigued by my divination?"</a>
+		<br><br><a href="#" onclick="show('visit_lutai','decline_prince');change_color(this)">"I'm curious of that smoke, your Highness. Can we go to where it is rising?"</a>
+		<br><br><a href="#" onclick="show('prince_praise_king','decline_prince');change_color(this)"> "Your Highness, why are you so intrigued by my divination?"</a>
 	</div>
 	<div class="page" id="prince_praise_king" style="display:none">
 		The prince's brow tilts. "Well, in honesty I wondered if I could learn," he says. "Of course, it's impossible for me with my responsibilities as heir, but I suppose I wanted to advise my father, in a way."
@@ -200,7 +189,7 @@
 		<br><br>The prince smirks. "Father is the best King our kingdom has ever seen, of cours," he says, with an air of certainty that compells you to agree. "He was a war hero before he was king, and he was a fierce general bringing upon glory. He is the proud sun of Shang and our court his pride." 
 		<br><br>"Each and every one in court respects him, and I the most. I wish I could contribute, to live up to his name, you see. But he's yet to let me advise in court," the prince says, though you notice how his tone turns bitter by the end. 
 		<br><br>It is plain to you that the prince dislikes a certain person at the King's side, that Daji figure. But you'd witnessed his idolation of his father. If not prideful, the prince is a man of candor, and his respect rings true.
-		<br><br>The pair of you walk forward, the racket of merchants covering your muddled thoughts. You are reminded of <a href="#" onclick="return show('visit_lutai','prince_praise_king');">the smoke</a> once more, now closer to you than before.
+		<br><br>The pair of you walk forward, the racket of merchants covering your muddled thoughts. You are reminded of <a href="#" onclick="show('visit_lutai','prince_praise_king');change_color(this)">the smoke</a> once more, now closer to you than before.
 	</div>
 	<div class="page" id="accept_prince" style="display:none">
 		"Let us go then," says the prince, before heading towards the gates.
@@ -208,22 +197,22 @@
 		<br><br><i>Why is he taking such an interest in you, a modest diviner?</i>
 		<br><br>The pair of you trek across streets, where busy tradesmen call to passerby and haggle prices. Your eyes wander at all the various dishes and jewlery. Far off in the distance, a column of black smoke rises, just as it has always been every morning out your window since your arrival.	
 		Sure enough, the prince asks you questions about your divinations, and how you indicate the good fortune versus the bad. You answer his queries one by one, yet you find yourself thinking of questions of your own as well.
-		<br><br><a href="#" onclick="return show('visit_lutai','accept_prince');">"I'm curious of that smoke, your Highness. Can we go to where it is rising?"</a>
-		<br><br><a href="#" onclick="return show('prince_praise_king','accept_prince');">"Your Highness, why are you so intrigued by my divination?"</a>
+		<br><br><a href="#" onclick="show('visit_lutai','accept_prince');change_color(this)">"I'm curious of that smoke, your Highness. Can we go to where it is rising?"</a>
+		<br><br><a href="#" onclick="show('prince_praise_king','accept_prince');change_color(this)">"Your Highness, why are you so intrigued by my divination?"</a>
 	</div>
 	<div class="page" id="visit_lutai" style="display:none">
 		"That smoke?" The prince wrinkles his nose. "It's from the workers building Lutai, that's all. Come, I'll show you a better view."
 		<br><br>You follow suit as he walks forth, trekking towards the billowing smoke, and find youself standing at the foot of a grand terrance, levels upon levels, surrounded by few wooden beams of support as workers mill by, carrying heavy stones.
 		<br><br>"Father built this terrance to hold all treasures from battle," the prince explains, as your eyes wander from the white marble walls to the warm glow of engraved agate. "This place is for celebration and leisure&mdash;to substitute the pains of war, I suppose."
 		<br><br>This must be the reason the King was careless of your lack of treasures, you thought. Perhaps it is because he only values the items he earned with blood.
-		<br><br><a href="#" onclick="return show('prince_praise_king','visit_lutai');">Ask the prince why he is intrigued by your divination.</a>
-		<br><br><a href="#" onclick="return show('explore_lutai','visit_lutai');">Explore Lutai further.</a>
+		<br><br><a href="#" onclick="show('prince_praise_king','visit_lutai');change_color(this)">Ask the prince why he is intrigued by your divination.</a>
+		<br><br><a href="#" onclick="show('explore_lutai','visit_lutai');change_color(this)">Explore Lutai further.</a>
 	</div>
 	<div class="page" id="explore_lutai" style="display:none">
 		You start towards the gates, yet stop once more at the prince's hand. 
 		<br><br>"We cannot go inside," He says, with a quick and darting look towards the tall terrance. "It's almost finished, and Father explicitly ordered no entry for those who aren't workers. Come, I'll show you the best shop in the market."
 		<br><br>As the prince turns, you take yet another moment to look. Not at the terrance this time, but rather the workers toiling by. You watch as their backs bend, hauling heavy masses onto their sweat-stained shoulders, faces crying silently in weariness. 
-		<br><br><i><a href="#" onclick="return show('ch2_prince','explore_lutai');">Just what should one make of the Shang King?</a></i>
+		<br><br><i><a href="#" onclick="show('ch2_prince','explore_lutai');change_color(this)">Just what should one make of the Shang King?</a></i>
 	</div>
 	<div class="page" id="ch2_prince" style="display:none">
 		Chapter 2 coming soon...
@@ -235,69 +224,69 @@
 		<br><br>"...It was not clear whether whom the Shang diviners prayed to. It may have been ancestors, spirits, gods, or no one but the cosmos itself..."
 
 		<br>&mdash;Youngsun Back
-		<br><br><a href="#" onclick="return show('bad_outlook_1','who_ans_div');">Return to the present</a></i>
+		<br><br><a href="#" onclick="show('bad_outlook_1','who_ans_div');change_color(this)">Return to the present</a></i>
 	</div>
 	<div class="page" id="bad_outlook_1" style="display:none">
 		With a bow, a servant presents your bone to the King. As you watch in anticipation, his shoulder tenses and jaw twitches. 
 		Yet you are rooted to your spot, fear overflowing your limbs, trembling the body. They say the new Shang King is unlike his predecessors, violent in battle and fierce in conquers. You feel the weight of that truth upon you now, as the King's attention drifts from the bone to you, face clouded in cold fury.
-		<br><br>"You would have the cosmos declare the dynasty in peril?" he thunders, smacking the goblet within his hands, the expensive wine spreading across the floor in a loud clatter. You dare not to remind him that <a href="#" onclick="return show('who_ans_div','bad_outlook_1');">you are but a spokesperson, not a prophet</a>. You shake from the crisp sound, your breaths coming sharp and swift. 
+		<br><br>"You would have the cosmos declare the dynasty in peril?" he thunders, smacking the goblet within his hands, the expensive wine spreading across the floor in a loud clatter. You dare not to remind him that <a href="#" onclick="show('who_ans_div','bad_outlook_1');change_color(this)">you are but a spokesperson, not a prophet</a>. You shake from the crisp sound, your breaths coming sharp and swift. 
 		<br><br>"Take them outside," the King said with a scowl. "Grant them five lashes under the midday sun." 
 		<br><br>The words register and dread pools into your belly as you hear rather than see the guards walking to your side. 
 		<br><br>"My king, if I may."
-		<a href="#" onclick="return show('notice_advisor','bad_outlook_1');">One advisor</a> aside the court had risen and spoke. "Diviners are merely conductors of cosmos' pattern, and our newest diviner merely showed the future of Shang may face obstacles. 
+		<a href="#" onclick="show('notice_advisor','bad_outlook_1');change_color(this)">One advisor</a> aside the court had risen and spoke. "Diviners are merely conductors of cosmos' pattern, and our newest diviner merely showed the future of Shang may face obstacles. 
 		But with you in charge, my King, there is no cause to worry."
 		<br><br>As you marvel at the advisor for his unexpected aid, Daji had leans in and whispers into the King's ear. 
 		<br><br>"Yes, yes." The King hums. "Away with the whips, my favored is not in the mood. And you," he tilts his chin at you, and you hastily bow. "Away as well."
-		<br><br>You exit the court swiftly, ears ringing. Still reeling from the punishment that would have been, you see the advisor who spoke walking away as well. <a href="#" onclick="return show('talk_to_advisor','bad_outlook_1');">Oh, how you must speak to him out of thanks.</a>
+		<br><br>You exit the court swiftly, ears ringing. Still reeling from the punishment that would have been, you see the advisor who spoke walking away as well. <a href="#" onclick="return show('talk_to_advisor','bad_outlook_1');change_color(this)">Oh, how you must speak to him out of thanks.</a>
 	</div>
 	<div class="page" id="notice_advisor" style="display:none">
 		Shoulders wide and straight-backed, he reminds you of a well-made bow, ready for action, yet reassuring of prescence. His face is tanned, marked with a few wrinkles.
-		<a href="#" onclick="return show('bad_outlook_1','notice_advisor');">Most importantly, he seems to be speaking in your favor.</a>
+		<a href="#" onclick="show('bad_outlook_1','notice_advisor');change_color(this)">Most importantly, he seems to be speaking in your favor.</a>
 	</div>
 	<div class="page" id="talk_to_advisor" style="display:none">
 		The advisor turns at your hurried footsteps, likely expecting your visit.
 		<br><br>"I must thank you for speaking in my favor," you say with tremendous gratitude. "I have no alliances to speak of in this foreign state&mdash;you are a kind man indeed for coming to my aid."
 		<br><br>The advisor laughs, short and sharp. "Of course, my friend. I do hope the city was of great impression, if not the court."
 		<br><br>You think back to the tall walls of the city, all its fine ornaments and carvings, how your eyes stared and your jaw slacked. You recall the King, how ready he was to punish at the wave of his hand.
-		<br><br><a href="#" onclick="return show('make_joke','talk_to_advisor');">"Well, your King is just as forgiving as your immovable towers, it seems."</a>
-		<br><br><a href="#" onclick="return show('discuss_punishment','talk_to_advisor');">"The city is beautiful, but I can no longer appreciate it for how quick your King was to punish!"</a>
+		<br><br><a href="#" onclick="show('make_joke','talk_to_advisor');change_color(this)">"Well, your King is just as forgiving as your immovable towers, it seems."</a>
+		<br><br><a href="#" onclick="show('discuss_punishment','talk_to_advisor');change_color(this)">"The city is beautiful, but I can no longer appreciate it for how quick your King was to punish!"</a>
 	</div>
 	<div class="page" id="discuss_punishment" style="display:none">
 		The advisor quirks his brow. "Ah yes, I do understand how he must seem. But you must see that he's been made so by decades of war. Let me give you another chance for both our city and King." He points towards the city, an invitation. "Walk with me?" 
 		<br><br>You follow suit, curious of the city as much as the advisor's thoughts. <i>Why is this kind man so keen to defend the King, his eyes shining with loyalty?</i>
 		<br><br>The pair of you trek across streets, where busy tradesmen call to passerby and haggle prices. Your eyes wander at all the various dishes and jewelry. Far off in the distance, a column of black smoke rises, just as it has always been every morning out your window since your arrival.
 		<br><br>You turn to your newfound friend, whose name you've let to learn. You ask, and he laughs once more. "Zhang Ruyi, but call me Ruyi, if you wish. No use for formalities between friends." You smile in response.
-		<br><br><a href="#" onclick="return show('visit_lutai_advisor','discuss_punishment');">"I'm curious of that smoke. Can we go to where it is rising?"</a>
-		<br><br><a href="#" onclick="return show('advisor_defends_king','discuss_punishment');">"Tell me more of the King. Why are you loyal as so?"</a>
+		<br><br><a href="#" onclick="show('visit_lutai_advisor','discuss_punishment');change_color(this)">"I'm curious of that smoke. Can we go to where it is rising?"</a>
+		<br><br><a href="#" onclick="show('advisor_defends_king','discuss_punishment');change_color(this)">"Tell me more of the King. Why are you loyal as so?"</a>
 	</div>
 	<div class="page" id="make_joke" style="display:none">
 		The advisor chuckles, yet you hear the hidden silver of remorse in his voice. "Ah yes, I do understand how he must seem. But you must see that he's been made so by decades of war. Let me give you another chance for both our city and King." He points towards the city, an invitation. "Walk with me?" 
 		<br><br>You follow suit, curious of the city as much as the advisor's thoughts. <i>Why is this kind man so keen to defend the King, his eyes shining with loyalty?</i>
 		<br><br>The pair of you trek across streets, where busy tradesmen call to passerby and haggle prices. Your eyes wander at all the various dishes and jewelry. Far off in the distance, a column of black smoke rises, just as it has always been every morning out your window since your arrival.
 		<br><br>You turn to your newfound friend, whose name you've let to learn. You ask, and he laughs once more. "Zhang Ruyi, but call me Ruyi, if you wish. No use for formalities between friends." You smile in response.
-		<br><br><a href="#" onclick="return show('visit_lutai_advisor','make_joke');">"I'm curious of that smoke. Can we go to where it is rising?"</a>
-		<br><br><a href="#" onclick="return show('advisor_defends_king','make_joke');">"Tell me more of the King. Why are you loyal as so?"</a>
+		<br><br><a href="#" onclick="show('visit_lutai_advisor','make_joke');change_color(this)">"I'm curious of that smoke. Can we go to where it is rising?"</a>
+		<br><br><a href="#" onclick="show('advisor_defends_king','make_joke');change_color(this)">"Tell me more of the King. Why are you loyal as so?"</a>
 	</div>
 	<div class="page" id="advisor_defends_king" style="display:none">
 		The advisor&mdash;or rather, Ruyi&mdash;sighed. "I was one of the many high-ranking soldiers in his troops back when we were at war with the unrest states," he says as he walks amongst the shops slowly, allowing you to leisurely pick and clamor at the various trinkets. 
 		<br><br>Yet your curiosity to hear more of his past rather than roam is keen. Ruyi continues, his eyes now faraway and immersed in memories. "Back then, we knew him as General Di Xin. He was...fierce in battle, and an amazing strategist. He was loyal to us and we were to him, comrades in arms as you may say. All those years have forged him now, with harshness and decisiveness." 
 		<br><br>"I understand you must be confused by my loyalty, but I know the man who sits upon that throne, regardless of who's by his side." Ruyi says, though you noticed how his tone turns bitter by the end. 
 		<br><br>It is plain to you that Ruyi dislikes a certain person by the King's side, that Daji figure. But his loyalty is true and sound&mdash;Ruyi is a soldier, a man of fidelity.
-		<br><br>The pair of you walk forward, the racket of merchants covering your muddled thoughts. You are reminded of <a href="#" onclick="return show('visit_lutai_advisor','advisor_defends_king');">the smoke</a> once more, now closer to you than before.
+		<br><br>The pair of you walk forward, the racket of merchants covering your muddled thoughts. You are reminded of <a href="#" onclick="show('visit_lutai_advisor','advisor_defends_king');change_color(this)">the smoke</a> once more, now closer to you than before.
 	</div>
 	<div class="page" id="visit_lutai_advisor" style="display:none">
 		"That smoke? It's from the workers building Lutai, you see," says Ruyi. "Come, I'll show you."
 		<br><br>You follow suit as he walks forth, trekking towards the billowing smoke, and find youself standing at the foot of a grand terrance, levels upon levels, surrounded by few wooden beams of support as workers mill by, carrying heavy stones.
 		<br><br>"Our King is building this grand terrance to hold all treasures we've earned with years at war," Ruyi explains, as your eyes wander from the white marble walls to the warm glow of engraved agate. "This place is built for celebration and leisure enjoyments&mdash;a true gift for all our suffering for this kingdom."
 		<br><br>This must be the reason the King was careless of your lack of treasures, you thought. All the pleasures and fine gifts he sought may be too much, even for Lutai.
-		<br><br><a href="#" onclick="return show('advisor_defends_king','visit_lutai_advisor');">Ask advisor why he defends the king</a>
-		<br><br><a href="#" onclick="return show('explore_lutai_advisor','visit_lutai_advisor');">Explore Lutai further</a>
+		<br><br><a href="#" onclick="show('advisor_defends_king','visit_lutai_advisor');change_color(this)">Ask advisor why he defends the king</a>
+		<br><br><a href="#" onclick="show('explore_lutai_advisor','visit_lutai_advisor');change_color(this)">Explore Lutai further</a>
 	</div>
 	<div class="page" id="explore_lutai_advisor" style="display:none">
 		You start towards the gates, yet stop once more at Ruyi's hand. 
 		<br><br>"I'm afraid we cannot go inside, my friend," he says, with a sweeping look towards the tall terrance. "The work is almost finished, and the King explicitly ordered to not have anyone enter save for the workers. Let us head once more to the market&mdash;I must show you the exquisite work of the bronze craftsmen."
 		<br><br>As Ruyi turns, you take yet another moment to look. Not at the terrance this time, but rather the workers toiling by. You watch as their backs bend, hauling heavy masses onto their sweat-stained shoulders, faces crying silently in weariness. 
-		<br><br><i><a href="#" onclick="return show('ch2_advisor','explore_lutai_advisor');">Just what should one make of the Shang King?</a></i>
+		<br><br><i><a href="#" onclick="show('ch2_advisor','explore_lutai_advisor');change_color(this)">Just what should one make of the Shang King?</a></i>
 	</div>
 	<div class="page" id="ch2_advisor" style="display:none">
 		Chapter 2 coming soon...
