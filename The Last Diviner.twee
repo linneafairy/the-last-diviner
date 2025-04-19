@@ -7,7 +7,7 @@ The Last Diviner
   "ifid": "E74CE6BB-C114-4612-A6CF-22F1F5A0C92F",
   "format": "SugarCube",
   "format-version": "2.37.3",
-  "start": "CH1: start",
+  "start": "Game Start",
   "zoom": 0.6
 }
 
@@ -22,7 +22,7 @@ The shop owner pursed his lips yet still did not look up. You get the impression
 You offered him three cowrie shells for a bowl of rice wine. Parched as you were, you drained the bowl swiftly, and said your thanks.
 
 [[Ask about the temperament of the Shang King]] 
-[[CH0: Head to Zhaoge City]]
+[[Return to your carriage|CH0: Head to Zhaoge City]]
 
 
 :: Ask about the temperament of the Shang King {"position":"250,725","size":"100,100"}
@@ -35,7 +35,7 @@ The man made a face. "Others call him violent and cruel, of course. Common hears
 [[Ask about the smoke]] 
 [[Ask to buy a drink]] 
 
-[[CH0: Head to Zhaoge City]] 
+[[Return to your carriage|CH0: Head to Zhaoge City]] 
 
 
 :: Ask to buy a drink {"position":"250,475","size":"100,100"}
@@ -44,7 +44,7 @@ You offered him three cowrie shells for a bowl of rice wine. Parched as you were
 [[Ask about the smoke]] 
 [[Ask about the temperament of the Shang King]] 
 
-[[CH0: Head to Zhaoge City]]
+[[Return to your carriage|CH0: Head to Zhaoge City]]
 
 
 :: CH0: Follow the man into Zhaoge's walls {"position":"600,550","size":"100,100"}
@@ -64,7 +64,9 @@ Too late did you realize that the Qiang court did not equip you with valuable tr
 
 
 :: CH0: Gossip on Daji {"position":"600,800","size":"100,100"}
-"The King did not care if you brought precious tributes?" You nodded to the servant. It surprises you then, when she chuckled, lifting her sleeve to cover the sound. She glanced once more at the Queen pointedly, and you feel as if you've missed something important. 
+"The King did not care if you brought precious tributes?" 
+
+You nodded to the servant. It surprises you then, when she chuckled, lifting her sleeve to cover the sound. She glanced once more at the Queen pointedly, and you feel as if you've missed something important. 
 
 Another servant shot a glare at her. "Be silent." She then turned to you with pursed lips. "The King does not care for much these days," she said. "None entertains him, with one exception."
 
@@ -74,7 +76,7 @@ You feel your confusion growing as she hesitates. "And what's that?"
 
 You thanked them and resumed your trek to your settlement in the palace. After half a moment, you finally came upon your room. 
 
-Tired and drained from the long journey, you felt your rigid back weaken at the sight of your bed. Weary as you are, you [[drifted into the arms of dreams|CH1: start]].
+Tired and drained from the long journey, you felt your rigid back weaken at the sight of your bed. Weary as you are, you [[drifted into the arms of dreams|CH1: Ritual]].
 
 
 :: CH0: Head to Zhaoge City {"position":"600,425","size":"100,100"}
@@ -96,7 +98,7 @@ Finally, your carriage comes to a stop. A man approaches, greeting you as you st
 
 The man hurried away, leaving you with heavy bags and no hands for help.
 
-[[CH0: Follow the man into Zhaoge's walls]]
+[[Follow the man into Zhaoge's walls|CH0: Follow the man into Zhaoge's walls]]
 
 
 :: CH0: lower bow {"position":"675,675","size":"100,100"}
@@ -138,13 +140,13 @@ The pair of you walked in silence, the racket of merchants covering your muddled
 :: CH1: Big decision: Bad outlook {"position":"1200,700","size":"100,100"}
 With a bow, a servant presented your bone to the King. As you watched in anticipation, his shoulder tensed and jaw twitched. Yet you are rooted to your spot, fear overflowing your limbs, trembling the body. They say the new Shang King is unlike his predecessors, violent in battle and fierce in conquers. You feel the weight of that truth upon you now, as the King's attention drifts from the bone to you, face clouded in cold fury.
 
-"You would have the cosmos declare the dynasty in peril?" He thundered, smacking the goblet within his hands, the expensive wine spreading across the floor in a loud clatter. You dared not to remind him that [[you are but a spokesperson, not a prophet|History: Who Answered the Diviner]]. You shook from the crisp sound, your breaths coming sharp and swifts. 
+"You would have the cosmos declare the dynasty in peril?" He thundered, smacking the goblet within his hands, the expensive wine spreading across the floor in a loud clatter. You dared not to remind him that [[you are but a spokesperson, not a prophet|CH1: History: Who Answered the Diviner]]. You shook from the crisp sound, your breaths coming sharp and swifts. 
 
 "Take them outside." The King said with a scowl. "Grant them fifth whips under the midday sun." The words registered and dread pooled into your belly as you hear rather than see the guards walking to your side. 
 
 "My king, if I may."
 
-[[One of the advisors|First impression of the advisor]] aside the court had risen and spoke. "Diviners are merely conductors of cosmos' pattern, and our newest diviner merely showed the future of Shang may face obstacles. But with you in charge, my King, there is no cause to worry."
+[[One of the advisors|CH1: First impression of the advisor]] aside the court had risen and spoke. "Diviners are merely conductors of cosmos' pattern, and our newest diviner merely showed the future of Shang may face obstacles. But with you in charge, my King, there is no cause to worry."
 
 As you marvel at the advisor for his unexpected aid, Daji had leaned in and whispered into the King's ear. 
 
@@ -174,7 +176,15 @@ You were astounded. The prince himself wishes to speak with you as a companion t
 
 
 [["Of course, your Highness. I thank you for your guidance."|CH1: First meeting the prince: accept]]
-[["I'm grateful for your offer, but won't it trouble your time?"|First meeting the prince: decline]]
+[["I'm grateful for your offer, but won't it trouble your time?"|CH1: First meeting the prince: decline]]
+
+
+:: CH1: Context: Qiang 2 {"position":"900,350","size":"100,100"}
+In your memory, the life back home at Qiang was peaceful. While news of war raged, you recalled no turmoil from your childhood, nothing more than a rumor passing through the streets. 
+
+You'd practiced and learned the art of oracle bone divination in those times, underneath the bright blue skies, often finding yourself tracing bone patterns into the dirt besides your legs as you herded the cattle. 
+
+Now, those days seemed distant and faraway from the halls of [[the imperial palace|CH1: Ritual]].
 
 
 :: CH1: End of Chapter 1, advisor {"position":"1150,1325","size":"100,100"}
@@ -197,8 +207,29 @@ As the prince turned, you took yet another moment to look. Not at the terrance t
 //[[Just what should one make of the Shang King?|CH2: start]]//
 
 
+:: CH1: First impression of the advisor {"position":"900,600","size":"100,100"}
+Shoulders wide and straight-backed, he reminded you of a well-made bow, tight and ready for action, yet reassuring of prescence. His face was tanned, marked with a few wrinkles.
+
+[[Most importantly, he seems to be speaking in your favor.|CH1: Big decision: Bad outlook]]
+
+
 :: CH1: First meeting the prince: accept {"position":"925,825","size":"100,100"}
 "Let us go then," said the prince, before heading towards the gates.
+
+You followed suit, curious of the city as much as of the prince. //Why is he taking such an interest in you, a modest diviner?//
+
+The pair of you trekked across streets, where busy tradesmen call to passerbys and haggled prices. Your eyes wander at all the various dishes and jewlery. Far off in the distance, a column of black smoke rises, just as it has always been every morning out your window since your arrival.
+
+Sure enough, the prince had asked you questions about your divinations, and how you indicate the good fortune versus the bad. You answered his queries one by one, yet you found yourself thinking of questions of your own as well.
+
+
+[["I'm curious of that smoke, your HIghness. Can we go to where it is rising?"|CH1: First visit Lutai with prince]]
+[["Your Highness, why are you so intrigued of my divination?"|CH1: Prince praises the King]]
+
+
+
+:: CH1: First meeting the prince: decline {"position":"1025,825","size":"100,100"}
+"Well, worry not, for I have time today for a short trip, if not anything." said the prince, before heading towards the gates. "Let us go, then."
 
 You followed suit, curious of the city as much as of the prince. //Why is he taking such an interest in you, a modest diviner?//
 
@@ -240,6 +271,18 @@ This must be the reason the King was careless of your lack of treasures, you tho
 [[Explore Lutai further|CH1: End of Chapter 1, prince]]
 
 
+:: CH1: History: Who Answered the Diviner {"position":"900,475","size":"100,100"}
+
+//Scholarly Theory, ??? B.C.E. - ???
+
+"...It was not clear whether whom the Shang diviners prayed to. It may have been ancestors, spirits, gods, or no one but the cosmos itself..."
+
+--Youngsun Back//
+
+
+[[Return from ??? to your journey|CH1: Big decision: Bad outlook]]
+
+
 :: CH1: Prince praises the King {"position":"925,1075","size":"100,100"}
 The prince's brow tilted. "Well, in honesty I wondered if I could learn." He said. "Of course, it's impossible for me with my responsibilities as heir, but I suppose I wanted to advise my father, in a way."
 
@@ -257,7 +300,7 @@ The pair of you walked forward, the racket of merchants covering your muddled th
 
 
 
-:: CH1: Reading the Bone {"position":"1100,550","size":"100,100"}
+:: CH1: Reading the bone {"position":"1100,500","size":"100,100"}
 As you ran your eyes over the bone, you felt yourself frown at how there were far more ominous cracks than auspicious ones.
 
 It is ritual process for a diviner to inscribe beside the cracks indicating good omens and leave the ominous cracks without comment, before the King proceeds with his interpretation.
@@ -269,7 +312,7 @@ You knew that if you left the ominous cracks without inscriptions, the King will
 [[You decide to inscribe the good omens but leave out the ominous cracks, as it is meant to be.|CH1: Big decision: Bad outlook]] 
 
 
-:: CH1: Ritual {"position":"1100,425","size":"100,100"}
+:: CH1: Ritual {"position":"1100,300","size":"100,100"}
 //
 ~ (Date in the form of Shang Dynasty) ~
 
@@ -282,13 +325,28 @@ Just when you were sure the King's urgency for your arrival is but an exaggerati
 
 "Tell me," the King had said, his body draped over the carved throne, the infamous Daji to his side, her palm massaging into his shoulders. "Will the Shang thrive on in glory?" And as lazy his tone was as his form, the steel in his eyes chilled you.
 
-You felt his stare even now, unseeing his face. But no matter. To you, the oracle bone's ritual process has been written into your mind, from [[years of practice back in the Qiang state|Context: Qiang 2]]. Your hand moved, almost mindlessly, aligning the scorched hollows from bottom to top as your eyes searched for patterns, cracks, signs. 
+You felt his stare even now, unseeing his face. But no matter. To you, the oracle bone's ritual process has been written into your mind, from [[years of practice back in the Qiang state|CH1: Context: Qiang 2]]. Your hand moved, almost mindlessly, aligning the scorched hollows from bottom to top as your eyes searched for patterns, cracks, signs. 
 
-The preparations are soon finished in making. [[You leaned forward to take a look at the cracks.|CH1: Reading the Bone]]
+The preparations are soon finished in making. [[You leaned forward to take a look at the cracks.|CH1: Reading the bone]]
 
 
 :: CH1: Small decision 1: player displeased with punishment {"position":"1150,950","size":"100,100"}
 The advisor quirked his brow. "Ah yes, I do understand how he must seem. But you must see that he's made as so by decades of war. Let me give you another chance for both our city and King." He pointed towards the city, an invitation. "Walk with me?" 
+
+You followed suit, curious of the city as much as the advisor's thoughts. //Why is this kind man so keen to defend the King, his eyes shining of loyalty?//
+
+The pair of you trekked across streets, where busy tradesmen call to passerbys and haggled prices. Your eyes wander at all the various dishes and jewlery. Far off in the distance, a column of black smoke rises, just as it has always been every morning out your window since your arrival.
+
+You turn to your newfound friend, whose name you've let to learn. You asks, and he laughs once more. "Zhang Ruyi, but call me Ruyi, if you wish. No use for formalities between friends." You smiled in response.
+
+
+[["I'm curious of that smoke. Can we go to where it is rising?"|CH1: First visit Lutai with advisor]]
+[["Tell me more of the King. Why are you loyal as so?"|CH1: Advisor defends King]]
+
+
+
+:: CH1: Small decision 2: player jokes {"position":"1250,950","size":"100,100"}
+The advisor chuckles, yet you heard the hidden silver of remorse in his voice. "Ah yes, I do understand how he must seem. But you must see that he's made as so by decades of war. Let me give you another chance for both our city and King." He pointed towards the city, an invitation. "Walk with me?" 
 
 You followed suit, curious of the city as much as the advisor's thoughts. //Why is this kind man so keen to defend the King, his eyes shining of loyalty?//
 
@@ -312,18 +370,254 @@ The advisor laughed, short and sharp. "Of course, my friend. I do hope the city 
 You thought back to the tall walls of the city, all its fine ornaments and carvings, how your eyes stared and your jaws slacked. You recalled the King, how ready he was to punish at the wave of his hand.
 
 
-[["Well, your King just as forgiving as your immovable towers, it seems."|Small decision 2: player jokes]]
+[["Well, your King just as forgiving as your immovable towers, it seems."|CH1: Small decision 2: player jokes]]
 [["The city was beautiful, but I can no longer appreciate for how quick your King was to punish!"|CH1: Small decision 1: player displeased with punishment]]
 
 
 
-:: CH1: start {"position":"1100,300","size":"100,100"}
-Chapter 1
+:: CH2: Big decision: Conquer {"position":"1600,700","size":"100,100"}
+The King read through the bone, and you watched as he laid down the bone atop the table with a satified look. 
 
-[[Resume your Journey|CH1: Ritual]]
+"The spirits endorse my will," his voice echoed and commanded all eyes within the room. "Prepare our troops, we shall invade soon!" Messengers bowed and retreated from the room, no doubt relaying the message to soliders, lying in wait. 
+
+The court dispersed, and you take your leave as well. On your way out, you see one of the advisors--Ruyi, you recall--with pale face and shaken fingers. But you were swiftly whisked away with the rest of the court.
+
+You stroll along the street before hearing [[a commotion around the sleeping quarters|CH2: Ruyi's Suicide]]
 
 
-:: CH2: start {"position":"1600,300","size":"100,100"}
+:: CH2: Big decision: No conquer {"position":"1800,700","size":"100,100"}
+The King read through the bone, and you watched as he laid down the bone with pursed lips.
+
+"The spirits are...concerned of what such a war effort may bring," his voice echoed and commanded all eyes within the room. "I shall not launch my soldiers today." The court bowed, and you took your leave as they dispersed. 
+
+You strolled within the palace when suddenly, you heard several [[voices--loud and infuriated.|CH2: Prince and King conversation]]
+
+
+:: CH2: Context Qiang 3 {"position":"1475,950","size":"100,100"}
+You recalled how, back in Qiang, soldiers went to war and never returned. They recovered no bodies, no memorandum. You remembered asking your father if they'd died.
+
+He was silent for a long time. Your father was a soldier, once. 
+
+"I hope that they are." He had said. "There are far worse fates."
+
+His voice echoed within your head as you stared, unmoving, at [[the ink at your feet|CH2: Ruyi's Suicide to Daji's dungeon visit]].
+
+
+:: CH2: Daji and King conversation {"position":"1800,950","size":"100,100"}
+"Yes, my favored." Said the King, and it dawned on you just then that you were not the only one hiding.
+
+"At long last!" Daji's voice floated from within the room. "I thought he meant to stay the night." 
+
+"I bare no mind to entertain that spoilt child." Said the King with a scoff. "In his prescence, I cannot speak freely of my...plans, that is."
+
+A rustle, and Daji's voice is now a murmur. "And what did you have in mind, my King?"
+
+The King laughed brusquely. "Nights with you are a given, dear." He said. "And you know what I meant. The boy would spread my plan of secret invasion like wildfire before my men are ready to march."
+
+You had to stifle a gasp before it alerted the King and his consort. //An invasion into Gui, still? Despite the bone's message?//
+
+Lost in thought, you almost failed to notice Daji stepping from the doors, a furtive look upon her face. She glanced around, but did not see you. As she swiftly walked away, you could not help but notice that she was walking in the direction of Lutai in the city. 
+
+[[What is she up to?|CH2: Daji speaks with prisoner]]
+
+
+:: CH2: Daji speaks with prisoner {"position":"1700,1100","size":"100,100"}
+Daji took no notice of you trailing behind her. As workers and guards surrounding Lutai turned their backs, she slipped through a back door you would not have seen otherwise. You followed suit, curiosity brewing.
+
+Instead of entering Lutai itself, Daji approached an ordinary straw shed nearby. You plastered your ear to a small crack upon the wall, and listened.
+
+"--I've no care for you as much as that snake, Dixin." A voice you did not recognize snarled, followed by a rattle of bronze scraping against each other. Your eyes widened. A man, bound in chains.
+
+An airy chuckle stopped him short. "You made that quite clear when you had a knife pointing to my heart, peasant." Said Daji, her tone mocking. "Whom were you truly aiming it for? Me, or the King?" 
+
+"Does it matter?" More sounds of metal, clinking together as the man was likely struggling against his chains amidst shout. "You and that beast of a man are the poisons of this world! Needless war, higher taxation--people starve as you party amongst pools of liquor. Any blood on my knife would've been a blessing from spirits."
+
+"You can curse and spit all you want," Daji's voice was soft, sending pinpricks down your back. "But your 'needless wars' are the only thing holding up this kingdom's failing states together. Why resist then, when the Shang thrives as one under my King?"
+
+The chains thrashed even harder as the man cried out in rage. "You dare! You shameless consort--"
+
+"You know of the punishments we have for assassinations like yours," said Daji. "If I were you, I wouldn't waste my breath while I still had it."
+
+With a swing and a click of the door, all was silent. 
+
+"Come inside." The voice said suddenly. You jumped at the words, and gave a sweeping look around the shed. You were the only one there, now, apart from the man calling for you. 
+
+The voice sighed, "I know you're there, fool."
+
+[[With a shaky breath, you opened the door and slipped in.|CH2: Player talk to prisoner]]
+
+
+:: CH2: Inform player of Zhou rebel {"position":"1700,1350","size":"100,100"}
+The man paused, and lifted his head to fully look at you. You felt his eyes take in your form, your stance, your face. He must've saw something there, as he began to spoke.
+
+"Who I am is unimportant." He said. "It is where I'm from that matters." His eyes searched yours once more, and his speech lowered to a faint whisper. "I am from the Zhou state."
+
+The Zhou. You know of them, of couse, as one of the many states under Shang's ruling.
+
+"You must know by now that the King has long lost himself to decadence and corruption," the man said. "There may be no way out for me, but perhaps you can carry on my mission."
+
+"You want me to kill the King?!" You whisper-shouted. 
+
+The man waved his hand in dismissal. "No, no...I was meant to be a, ah, 'messanger' for the Zhou. The Zhou King has kept his eyes sharpened all these years, you see. He sees the people suffering and the cruelty of the Shang King. And he has been preparing."
+
+"Preparing." You said. A slight tremble has overtaken your fingers, but you felt strangely void of emotion.
+
+The man gazed at you meaningfully. "He is ready, now. If you can take my place, and transcribe what you see, what you hear, what you know of the court...Soon enough, the people under Shang will no longer have to suffer."
+
+//Because there will be no Shang left for them to fear.// 
+
+The man tells you of correspondance, of how he had relayed critical messages and information to the Zhou without becoming exposed to the King's forces. You listened in a daze, committing his words memory and yet not quite comprehending your situation.
+
+You cannot quite recall when you left the shed, or trekked back to the palace. As you sat down at the bed that night, you can only remember the look on that man's face, pained yet hopeful.
+
+[[You did not sleep. Instead, you watched as the sky bleeds from dark to light, the sun rising in the east.|CH3: Start]]
+
+
+:: CH2: Observe Daji {"position":"1475,400","size":"100,100"}
+Coated in fine silk and bright reds, Daji's lithe figure is a familiar sight by now. You cannot remember the number of times you've seen the Queen in court besides the King's hand, in comparison.
+
+You tear your eyes off the consort. [[The King was speaking once more.|CH2: start]]
+
+
+:: CH2: Player talk to prisoner {"position":"1700,1225","size":"100,100"}
+Whatever the man was expected, it certainly wasn't you. 
+
+"A scholar from court, are you?" He said with raised brows. "Thought you'd be one of them guards looking for somethin' to kick around."
+
+You winced at his words. "Not a guard." You said. "I'm but a diviner from the Qiang state by royal command."
+
+At that, the man's eyes had a strange glint to it. "From Qiang, eh? And how's working for the man that killed so many of your own?"
+
+You stilled. There were too many thoughts, too many questions in your mind.
+
+
+[[What do you mean? Our wars with the Shang ceased years ago.|CH2: prisoner reveal truth of Qiang]]
+[[Why did you try to kill the King?|CH2: prisoner speaks of cruelty of king]]
+[[Who are you?|CH2: Inform player of Zhou rebel]]
+
+
+
+
+
+
+:: CH2: Prince and King conversation {"position":"1800,825","size":"100,100"}
+As you crept closer to the bed chambers, you heard it: two voices, one indignant and one irritated. 
+
+"It's nonsense! Spirits do not disobey the will of the King." The first voice declared, and you finally recognized the familiar tone: it was the prince, who'd sat by the King now and then in Court. 
+
+The second voice--which must've belonged to the King, you reasoned--let out a huff. "And what will you have me do, hmm? Denounce the spirits and ancestors in front of all advisors?"
+
+Silenece. Then, the prince spoke once more: "Apologies, father. I only ever wished to grant glory to your name."
+
+"Yes, yes." Said the King, "And your worries are no longer welcomed. You are dismissed." A few moments, and you see the prince step out, his face still twisted in unsatisfied fury. 
+
+And then, another voice: "Has he gone?"
+
+Not to be deterred now, you [[leaned forward once more to listen in.|CH2: Daji and King conversation]]
+
+
+:: CH2: Reading the bone {"position":"1700,500","size":"100,100"}
+Intriguing...
+
+You've found the cracks in a delicate balance between ominous foretelings and fortuious signs. 
+
+You knew of the King's intention. The Gui is gaining its power in trade with merchants, and its millitary base has been fortified as the state tended to produce strong soldiers. Perhaps they are not a direct threat, at least in your eyes. 
+
+Then again, you are no king. You know not how the Gui behaves, what a King must do. You know not if such a conquer is what kept that peace you grew up in. 
+
+
+[[You decide to inscribe good omens largely, indicating the spirits' permittance of conquer|CH2: Big decision: Conquer]]
+[[You decide to leave cracks largely uninscribed, indicating the spirits' reluctance of conquer|CH2: Big decision: No conquer]]
+
+
+:: CH2: Ruyi's Suicide {"position":"1600,825","size":"100,100"}
+You push your way through the gathering crowd, and gasped at the sight. 
+
+The room was in disarray: stools toppled, ink splashed. But you can only stare in horror at the center of the room, where a figure was tied to the wooden beams above by nothing but the thick threads around his neck. 
+
+Advisor Ruyi had hanged himself. His form was boneless, face white as a sheet. Try as you may, you cannot find a sign of breathing, of life. 
+
+You forced yourself to look away in shock. You tried to focus on the splattered ink, patternless as it was. 
+
+But wait. The black liquid laid in long strokes, as if writing on a scroll. You shifted, chasing the strokes like you do with cracks on the bone. [[And then, you saw it.|CH2: Ruyi's Suicide to Daji's dungeon visit]]
+
+
+:: CH2: Ruyi's Suicide to Daji's dungeon visit {"position":"1600,950","size":"100,100"}
+You saw one, singular character:
+
+Gui. 
+
+"Pity," you heard another advisor behind you say. "Poor Ruyi must've heard the King's plan of conquer. He was such a loyal soldier as well--such were the people from the Gui."
+
+Spirits above. You felt dread pooling into your stomach, and suddenly you can no longer bear being in that room, not when Ruyi's soul lies so close to you, you who inscribed the bone permitting the King's act of war. 
+
+Then again, perhaps you were simply too naive. [[War had losses, after all|CH2: Context Qiang 3]]. 
+
+Confused with your feelings of guilt and self-justification, you tumbled away from the room in a hurry. Just as you turned the corner, you heard coming footsteps, and hid instinctively in your anxiety-ridden mind. 
+
+It was Daji, a furtive look upon her face. She glanced around, but did not see you. As she swiftly walked away, you could not help but notice that she was walking in the direction of Lutai in the city. 
+
+[[What is she up to?|CH2: Daji speaks with prisoner]]
+
+
+:: CH2: prisoner reveal truth of Qiang {"position":"1575,1350","size":"100,100"}
+The man scoffed. "The wars never stopped. That 'King' you serve either launched secret invasions or attacked outright."
+
+You swallowed. "And what of the Qiang?"
+
+He regarded you, disappointed and distraught all the same. "You truly do not know."
+
+"What do I not know?"
+
+The man squared his shoulders, making the chains around his wrists clash once more in a cacophony of screeches. "They keep your soldiers for only one of two purposes." The man said quietly, head bowed in an mock of an apology. "Either they labor to build Lutai until they can no longer walk, or..."
+
+"Or?" You felt like an impatient child, even as the horror of his words began to catch up to you.
+
+"...Or they are sacrificed and slaughtered in front of crowds to the heavens." Said the man. "A display their power. A permanent reminder that the Shang King was in control."
+
+The air was still. You stood, frozen. Outside, you hear the workers at Lutai, the thud of their footsteps an irradical heartbeat. You inhaled, and let go of a trembling breath.
+
+
+[[Why did you try to kill the King?|CH2: prisoner speaks of cruelty of king]]
+[[Who are you?|CH2: Inform player of Zhou rebel]]
+
+
+
+:: CH2: prisoner speaks of cruelty of king {"position":"1825,1350","size":"100,100"}
+For some reason, the man's expression twisted into one of guilt. 
+
+"I was not supposed to, you see." He said remorsefully. "I was never meant to catach the King's attention. I simply could not stand his cruelty any longer. Issuing conquers as if child's play!"
+
+You kepts your thoughts to yourself, that the King meant to conquer to strengthen the Shang and unify the states. That perhaps conquers were not loved but needed. You had learned quite a lot from being in court each day, it seems.
+
+Something the man said caught your attention. // Not// supposed //to, he had said.//
+
+[[What do you mean? Our wars with the Shang ceased years ago.|CH2: prisoner reveal truth of Qiang]]
+[[Who are you?|CH2: Inform player of Zhou rebel]]
+
+
+
+
+:: CH2: start {"position":"1700,300","size":"100,100"}
+//
+~ (Date in the form of Shang Dynasty) ~
+
+~ Zhaoge ~
+//
+
+
+By this time, the footmen's hurried steps carrying your summons from the King is a familiar sound. Days in the palace answering the King's various queries has made you familiar to the palace layout, and you find your feet knowing the way before you.
+
+The King was seated at the throne as always, and [[Daji|CH2: Observe Daji]] to his side. You scorched dips until the felt fragile and light within your hands.
+
+"Ask this of the spirits," said the King, "is it auspicious to conquer our neighboring state Gui?"
+
+You tampered down a sharp inhale at this request. Compared to the King, you are a mere stranger to violence and warfare, raised in a life of scholarship in the mellow Qiang.
+
+Be as it may, you cannot disobey such an order. You closed your eyes as the cracks began to appear. Removing the fire, you [[opened your eyes.|CH2: Reading the bone]]
+
+
+:: CH3: Start {"position":"2200,300","size":"100,100"}
 
 
 
@@ -337,35 +631,6 @@ Hardworking and diligent, your people presented yourselves as peaceful nomadic s
 But you must not show it. Times are uncertain. It is much simpler to remain a diviner for Shang, chosen by the Qiang King's counselor--a regular occurence for your state affairs. Other than so, you have no real ties to the Qiang court. [[You must return your wandering thoughts to the art of divination in the present|CH0: Head to Zhaoge City]].
 
 
-:: Context: Qiang 2 {"position":"900,350","size":"100,100"}
-In your memory, the life back home at Qiang was peaceful. While news of war raged, you recalled no turmoil from your childhood, nothing more than a rumor passing through the streets. 
-
-You'd practiced and learned the art of oracle bone divination in those times, underneath the bright blue skies, often finding yourself tracing bone patterns into the dirt besides your legs as you herded the cattle. 
-
-Now, those days seemed distant and faraway from the halls of [[the imperial palace|CH1: Ritual]].
-
-
-:: First impression of the advisor {"position":"900,600","size":"100,100"}
-Shoulders wide and straight-backed, he reminded you of a well-made bow, tight and ready for action, yet reassuring of prescence. His face was tanned, marked with a few wrinkles.
-
-[[Most importantly, he seems to be speaking in your favor.|CH1: Big decision: Bad outlook]]
-
-
-:: First meeting the prince: decline {"position":"1025,825","size":"100,100"}
-"Well, worry not, for I have time today for a short trip, if not anything." said the prince, before heading towards the gates. "Let us go, then."
-
-You followed suit, curious of the city as much as of the prince. //Why is he taking such an interest in you, a modest diviner?//
-
-The pair of you trekked across streets, where busy tradesmen call to passerbys and haggled prices. Your eyes wander at all the various dishes and jewlery. Far off in the distance, a column of black smoke rises, just as it has always been every morning out your window since your arrival.
-
-Sure enough, the prince had asked you questions about your divinations, and how you indicate the good fortune versus the bad. You answered his queries one by one, yet you found yourself thinking of questions of your own as well.
-
-
-[["I'm curious of that smoke, your HIghness. Can we go to where it is rising?"|CH1: First visit Lutai with prince]]
-[["Your Highness, why are you so intrigued of my divination?"|CH1: Prince praises the King]]
-
-
-
 :: Game Start {"position":"600,300","size":"100,100"}
 ~ Welcome to the Last Royal Diviner :>
 
@@ -373,6 +638,11 @@ Sure enough, the prince had asked you questions about your divinations, and how 
 
 ~Background:
 You are the last royal diviner of the Shang Dynasty, interpreting oracle bones to predict the fate of the kingdom. As the Zhou invasion looms, you must balance truthful readings with political pressure from the king and nobles. Will you remain loyal to the dynasty, or alter prophecies to change history?
+
+~Trigger Warning: Suicide, Violence
+
+~Instructions:
+1. Click on the links(highlighted words in blue)
 
 [[Begin Your Journey|CH0: Head to Zhaoge City]] 
 
@@ -407,33 +677,6 @@ The rest of Yan's descendents, unwilling to bend, moved west or south and became
 
 
 [[Return from ??? to your journey|CH0: Head to Zhaoge City]]
-
-
-:: History: Who Answered the Diviner {"position":"900,475","size":"100,100"}
-
-//Scholarly Theory, ??? B.C.E. - ???
-
-"...It was not clear whether whom the Shang diviners prayed to. It may have been ancestors, spirits, gods, or no one but the cosmos itself..."
-
---Youngsun Back//
-
-
-[[Return from ??? to your journey|CH1: Big decision: Bad outlook]]
-
-
-:: Small decision 2: player jokes {"position":"1250,950","size":"100,100"}
-The advisor chuckles, yet you heard the hidden silver of remorse in his voice. "Ah yes, I do understand how he must seem. But you must see that he's made as so by decades of war. Let me give you another chance for both our city and King." He pointed towards the city, an invitation. "Walk with me?" 
-
-You followed suit, curious of the city as much as the advisor's thoughts. //Why is this kind man so keen to defend the King, his eyes shining of loyalty?//
-
-The pair of you trekked across streets, where busy tradesmen call to passerbys and haggled prices. Your eyes wander at all the various dishes and jewlery. Far off in the distance, a column of black smoke rises, just as it has always been every morning out your window since your arrival.
-
-You turn to your newfound friend, whose name you've let to learn. You asks, and he laughs once more. "Zhang Ruyi, but call me Ruyi, if you wish. No use for formalities between friends." You smiled in response.
-
-
-[["I'm curious of that smoke. Can we go to where it is rising?"|CH1: First visit Lutai with advisor]]
-[["Tell me more of the King. Why are you loyal as so?"|CH1: Advisor defends King]]
-
 
 
 :: buy a drink {"position":"400,525","size":"100,100"}
