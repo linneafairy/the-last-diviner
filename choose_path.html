@@ -52,7 +52,7 @@
       grid-template-rows: 3rem 4fr;
       grid-template-areas:
         'header header'
-        'start1 start2';
+        'start1 start2'
     }
 
     .start1 { 
@@ -76,9 +76,14 @@
     }
 
     a {
-        color: #68d;
+        color: #b5d54a;
         text-decoration: none;
         transition: color 0.2s;
+    }
+
+    a:hover {
+        color: #d8ff52;
+        text-decoration: underline;
     }
 
     img:hover {
@@ -109,6 +114,7 @@
 <div class="start2">Start in the present.
 
 <img id="letter" src="images/letter_1.png" alt="letter" style="width: 15vw" onclick="toggleImage('letter', 'images/letter_1.png', 'images/letter_2.png');unfade('link_2')">
+<br>
 <br>
 <div id="link_2", style="display:none"><a href="museum.html">Read message.</a></div>
 </div>
