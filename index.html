@@ -2,24 +2,26 @@
 <html>
 <head>
   <style>
-    @font-face {
-      font-family: 'Typeface'; 
-      src: url('typescript.ttf')  format('truetype'), /* Safari, Android, iOS */
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
     html {
-      font-family: 'Typeface';
-      font-size: 25px;
       line-height: 1;
       color: #eee;
       background-color: rgb(17,17,17); /* #456133 <-green #46311f <-brown rgb(17,17,17) */
       overflow: auto;
       white-space: pre-wrap;
+      font-family: 'Courier New', monospace;
+      font-size: 25px;
     }
 
     .wrapper {
       background-color: rgb(17,17,17);
       text-align: center;
+    }
+    
+    .middle {
+      font-family: "Caveat", cursive;
+			font-size: 35px;
     }
 
     a {
@@ -38,9 +40,9 @@
 <body>
   <div class="wrapper">
   <h1>The Last Diviner</h1>
+  <div class="middle">
   Click on images to interact.
-  Click on colored text to explore the story. 
-
+  Click on colored text to explore the story. </div>
   <a href=choose_path.html>Choose your path.</a>
   </div>
 </body>

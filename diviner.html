@@ -26,6 +26,15 @@
 		}
 	</script>
 	<link rel="stylesheet" href="style_story.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+		body {
+			font-family: "Caveat", cursive;
+			font-size: 35px;
+		}
+	</style>
 </head>
 
 <body>
@@ -212,12 +221,7 @@
 		You start towards the gates, yet stop once more at the prince's hand. 
 		<br><br>"We cannot go inside," He says, with a quick and darting look towards the tall terrance. "It's almost finished, and Father explicitly ordered no entry for those who aren't workers. Come, I'll show you the best shop in the market."
 		<br><br>As the prince turns, you take yet another moment to look. Not at the terrance this time, but rather the workers toiling by. You watch as their backs bend, hauling heavy masses onto their sweat-stained shoulders, faces crying silently in weariness. 
-		<br><br><i><a href="#" onclick="show('ch2_prince','explore_lutai');change_color(this)">Just what should one make of the Shang King?</a></i>
-	</div>
-	<div class="page" id="ch2_prince" style="display:none">
-		Chapter 2 coming soon...
-		<br><br>
-		<a href="index.html">Return to Title</a>
+		<br><br><i><a href="#" onclick="show('ch2_start','explore_lutai');change_color(this)">Just what should one make of the Shang King?</a></i>
 	</div>
 	<div class="page" id="who_ans_div" style="display:none">
 
@@ -288,10 +292,27 @@
 		<br><br>As Ruyi turns, you take yet another moment to look. Not at the terrance this time, but rather the workers toiling by. You watch as their backs bend, hauling heavy masses onto their sweat-stained shoulders, faces crying silently in weariness. 
 		<br><br><i><a href="#" onclick="show('ch2_advisor','explore_lutai_advisor');change_color(this)">Just what should one make of the Shang King?</a></i>
 	</div>
-	<div class="page" id="ch2_advisor" style="display:none">
-		Chapter 2 coming soon...
-		<br><br>
-		<a href="index.html">Return to Title</a>
+	<div class="page" id="ch2_start" style="display:none">
+		By this time, the footmen's hurried steps carrying your summons from the King is a familiar sound. Days in the palace answering the King's various queries has made you familiar with the palace layout, and you find your feet knowing the way before you.
+		<br><br>The King is seated at the throne as always, and <a href="#" onclick="show('observe_daji','ch2_start');change_color(this)">Daji</a>to his side. You scorched dips until the felt fragile and light within your hands.
+		<br><br>"Ask this of the spirits," says the King, "is it auspicious to conquer our neighboring state Gui?"
+		You tamp down a sharp inhale at this request. Compared to the King, you are a mere stranger to violence and warfare, raised in a life of scholarship in the mellow Qiang.
+		<br><br>Be as it may, you cannot disobey such an order. You close your eyes as the cracks begin to appear. Removing the fire, you <a href="#" onclick="show('read_bone_2','ch2_start');change_color(this)">open your eyes.</a>
+	</div>
+	<div class="page" id="observe_daji" style="display:none">
+		Coated in fine silk and bright reds, Daji's lithe figure is a familiar sight by now. You cannot remember the number of times you've seen the Queen in court besides the King's hand, in comparison.
+
+		<br><br>You tear your eyes off the consort. <a href="#" onclick="show('ch2_start','observe_daji');change_color(this)">The King was speaking once more.</a>
+	</div>
+	<div class="page" id="read_bone_2" style="display:none">
+		Intriguing...
+		<br><br>You've found the cracks in a delicate balance between ominous foretellings and fortuitous signs. 
+		<br><br>You knew of the King's intention. The Gui is gaining its power in trade with merchants, and its military base has been fortified as the state tended to produce strong soldiers. Perhaps they are not a direct threat, at least in your eyes. 
+		<br><br>Then again, you are no king. You know not how the Gui behaves, what a King must do. You know not if such a conquest is what kept that peace you grew up in. 
+
+
+		[[You decide to inscribe good omens largely, indicating the spirits' permittance of conquer|CH2: Big decision: Conquer]]
+		[[You decide to leave cracks largely uninscribed, indicating the spirits' reluctance of conquer|CH2: Big decision: No conquer]]
 	</div>
 </div>
 </body>

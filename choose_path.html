@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="style_titlepg.css">
   <script>
-    function toggleImage(id, src1, src2) {
+    function toggleImage(id, src1, src2, content) {
         if (document.getElementById(id).src.endsWith(src1)){
             document.getElementById(id).src = src2;
         } else {
@@ -25,16 +25,14 @@
             op += op * 0.1;
         }, 10);
     }
+    
   </script>
 
   <style>
-    @font-face {
-      font-family: 'Typeface'; 
-      src: url('typescript.ttf')  format('truetype'), /* Safari, Android, iOS */
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
     html {
-        font-family: 'Typeface';
+        font-family: 'Courier New', monospace;
         font-size: 25px;
         line-height: 1;
         color: #eee;
@@ -58,23 +56,23 @@
     }
 
     .start1 { 
-      grid-area:start1; 
-      text-align: center;
-      height:5fr;
-      overflow: auto;
-      /*border: 10px inset #456133;  #A8B57B green ->#456133*/
-      /*border-radius: 2%;*/
-      padding:20px;
+        font-family: "Caveat", cursive;
+        font-size: 35px;
+        grid-area:start1; 
+        text-align: center;
+        height:5fr;
+        overflow: auto;
+        padding:20px;
     }
 
     .start2 { 
-      grid-area:start2; 
-      text-align: center;
-      height:5fr;
-      overflow: auto;
-      /*border: 10px inset #46311f;  #A8B57B brown ->#46311f*/
-      /*border-radius: 2%;*/
-      padding:20px;
+        font-family: 'Courier', monospace;
+        font-size: 25px;
+        grid-area:start2; 
+        text-align: center;
+        height:5fr;
+        overflow: auto;
+        padding:20px;
     }
 
     a {
@@ -84,8 +82,6 @@
     }
 
     img:hover {
-        color: #8af;
-        text-decoration: underline;
         transform: scale(1.05);
     }
 
