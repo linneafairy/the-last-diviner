@@ -450,7 +450,7 @@ The voice sighed, "I know you're there, fool."
 :: CH2: Inform player of Zhou rebel {"position":"1700,1350","size":"100,100"}
 The man paused, and lifted his head to fully look at you. You felt his eyes take in your form, your stance, your face. He must've saw something there, as he began to spoke.
 
-"Who I am is unimportant." He said. "It is where I'm from that matters." His eyes searched yours once more, and his speech lowered to a faint whisper. "I am from the Zhou state."
+"My name is Wenxue, but who I am is unimportant." He said. "It is where I'm from that matters." Wenxue eyes searched yours once more, and his speech lowered to a faint whisper. "I am from the Zhou state."
 
 The Zhou. You know of them, of couse, as one of the many states under Shang's ruling.
 
@@ -462,11 +462,11 @@ The man waved his hand in dismissal. "No, no...I was meant to be a, ah, 'messang
 
 "Preparing." You said. A slight tremble has overtaken your fingers, but you felt strangely void of emotion.
 
-The man gazed at you meaningfully. "He is ready, now. If you can take my place, and transcribe what you see, what you hear, what you know of the court...Soon enough, the people under Shang will no longer have to suffer."
+Wenxue gazed at you meaningfully. "He is ready, now. If you can take my place, and transcribe what you see, what you hear, what you know of the court...Soon enough, the people under Shang will no longer have to suffer."
 
 //Because there will be no Shang left for them to fear.// 
 
-The man tells you of correspondance, of how he had relayed critical messages and information to the Zhou without becoming exposed to the King's forces. You listened in a daze, committing his words memory and yet not quite comprehending your situation.
+Wenxue tells you of correspondance, of how he had relayed critical messages and information to the Zhou without becoming exposed to the King's forces. You listened in a daze, committing his words memory and yet not quite comprehending your situation.
 
 You cannot quite recall when you left the shed, or trekked back to the palace. As you sat down at the bed that night, you can only remember the look on that man's face, pained yet hopeful.
 
@@ -617,7 +617,111 @@ You tampered down a sharp inhale at this request. Compared to the King, you are 
 Be as it may, you cannot disobey such an order. You closed your eyes as the cracks began to appear. Removing the fire, you [[opened your eyes.|CH2: Reading the bone]]
 
 
+:: CH3: Big decision: Zhou is a threat {"position":"2300,700","size":"100,100"}
+As you handed the bone to the footman, you felt the quiver of your heart steadying with each breath. You have made your choice.
+
+You watched as the King's expression hardened and ordered for his troops to attack the Zhou. And when you slipped away from the court, you walked towards the King's chamber, determined to [[tell him the truth|CH3: Warn the king]].
+
+
+
+
+
+
+
+:: CH3: Big decision: Zhou is not a threat {"position":"2100,700","size":"100,100"}
+As you handed the bone to the footman, you felt the quiver of your heart steadying with each breath. You have made your choice.
+
+You watched as the King roared with laughter, at the Zhou's weakness, in celebration of his complete control over the states. And when you slipped away from the court, you set off to Lutai to [[free Wenxue|CH3: Free the prisoner]].
+
+
+:: CH3: Ending: Shang stands {"position":"2300,1075","size":"100,100"}
+You stand, now, at the steps of the palace. The golds and pelts gifted by the King lay still within your room, too much for you, who had not a clue how to deal with such copius treasures.
+
+You turn, and there was the King--you meet with the King more often than not nowadays, as both the court diviner as well as an advisor. He lays a hand upon your shoulder, and his lips twisted into a satisfied smirk. The King's trust in you grows. You bow at his towering figure, and he leaves you there, in sole contemplation once more.
+
+At the edge of horizon, the black smoke continues to rise, where the workers of Lutai struggles under the midday sun, their flesh and blood laying the stones and glazing the hallways, their pained cries singing the Shang's glory.
+
+The sun hangs like a bird in the pit of the sky, and you wonder how suffering and triumph can coexist, how the light warms and burns all at once.
+
+You let the sun scald you, and closed your eyes.
+
+
+
+
+:: CH3: Ending: Zhou rebuilt {"position":"2100,1075","size":"100,100"}
+You stand, now, at the ledge of the new palace. You turn, and there was Wenxue, the lines carved by suffering and pain wiped away. He follows your gaze towards the rest of the city, where everything is being rebuilt. At the front of the palace walls, the Zhou flag billowed in the wind.
+
+The sun rises in the East, and golden light washes over the city of Zhou like a tide.
+
+You let the light wash over you, and smiled.
+
+
+:: CH3: Free the prisoner {"position":"2100,825","size":"100,100"}
+The look upon the former prisoner's face was grateful and grim all at once. "My thanks to you," he said. "Welcome to the new era, my friend." With those last words, Wenxue slipped away from Lutai's walls, blending in with the rest of the crowd. He was to return to the Zhou, and report to the Zhou King.
+
+You returned to your study, picked up a blank scroll, and [[began to write to the Zhou|CH3: Shang falls]].
+
+
+:: CH3: Reading the bone {"position":"2200,500","size":"100,100"}
+For once, you saw what the cracks are fortelling exactly.
+
+The ominous characters were overwhelming, splattered across various areas of the bone. A warning of the future of Shang, if they were to ignore Zhou. This would be surprising, if only you'd never met that man, begging for you to spy on the Shang for the Zhou revolt.
+
+You understood, then. You must make your choice now.
+
+
+[[You decide to inscribe good omens to cover the ominous cracks, dismissing the Zhou as non-threatening, thereby helping their rebellion.|CH3: Big decision: Zhou is not a threat]]
+[[You decide to leave the bone as is, alarming the King about Zhou, thereby securing Shang's future|CH3: Big decision: Zhou is a threat]]
+
+
+:: CH3: Shang falls {"position":"2100,950","size":"100,100"}
+It's been weeks since you had started sending information to the Zhou. You were not surprised, then, when the clashing of blades and battle cries sounded around your living quarters, and even less so when soldiers wearing foreign armour bursted into your room.
+
+"My respects to you, the last diviner of Shang." A soldier said, raising from his bow. "We will escort you to safety."
+
+You followed the soldiers outside, and saw for the first time the royal palace in disarray. The Shang royal guards were drastically outnumbered; it seems that many soldiers abandoned their posts, unable to tolerate the Shang King's brutality any longer. 
+
+As you trekked further away from the palace, you suddenly saw a light in the distance, coming from the direction of Lutai. Only later did you hear that the Shang King had tied himself to that unfinished palace's pinnacle, and lit himself abright with fire. The King burned, and his worldy treasures burned with him.
+
+[[... ...|CH3: Ending: Zhou rebuilt]]
+
+
+
 :: CH3: Start {"position":"2200,300","size":"100,100"}
+//
+~ (Date in the form of Shang Dynasty) ~
+
+~ Zhaoge ~
+//
+
+The sky was an ominous gray as you stood before the palace, the bone in your hand hot to the touch from its burns.
+
+Everything seemed as it was: the King, tall and imperious; the court, still and staring with fascination, and you, performing a divination--how many fortunes you have deciphered for the king? You can no longer recall. 
+
+Yet your heart and mind have not rested since your conversation with Wenxue at Lutai. 
+
+"Tell me," said the King. "Is the Zhou a threat?"
+
+Fate seemed determined to force your hand, after all. Slowly, you lowered your head to [[get a better look at the cracks|CH3: Reading the bone]].
+
+
+:: CH3: Warn the king {"position":"2300,825","size":"100,100"}
+The King was furious at the Zhou's betrayal. He turned to you. "You have my gratitude, diviner. I shall see to the attack //immediately//." With those last words, the King turned on his heels and strided away, no doubt to speak with his generals. 
+
+You returned to your study, and gazed outside your window, where [[the soldiers were marching from the gates, off to war|CH3: Zhou falls]].
+
+
+
+
+
+:: CH3: Zhou falls {"position":"2300,950","size":"100,100"}
+It's been weeks since you had warned the King of the Zhou's rebellion. You were not suprised, then, when you and the court was called forth by the King, triumphantly celebrating the surrender of the Zhou state.
+
+"Come forth!" The King bellowed, pointing to you. You walked forward, and the king spoke in an appreciative voice. "I shall reward you, diviner. From now on, you shall serve alongside my advisors. Send them the spoils of our Zhou conquer at once!"
+
+You bowed, and exited the throne room. 
+
+[[... ...|CH3: Ending: Shang stands]]
 
 
 
