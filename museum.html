@@ -38,7 +38,10 @@
         <a href="#" onclick="show('intro','intro_message');change_color(this)">Accept offer.</a>
     </div>
     <div class="page" id="intro" style="display:none">
-        You're on the bus, on your way to work.  It's your first day, in fact -- the first day of your first real job out of <a href="#" onclick="show('school','intro');change_color(this)">school</a>.  Nerves are making you squirm in your seat.  You swear it's ten degrees hotter inside the bus than outside.
+        <i>July 25, 2022<i/>
+        <br><i>in transit</i>
+
+        <br><br>You're on the bus, on your way to work.  It's your first day, in fact -- the first day of your first real job out of <a href="#" onclick="show('school','intro');change_color(this)">school</a>.  Nerves are making you squirm in your seat.  You swear it's ten degrees hotter inside the bus than outside.
 
         <br><br>As the minutes crawl by, the buildings get taller until you're in the city proper.  You stare at the rippling reflection of the bus as it passes storefront windows and glass-sided skyscrapers.  You snap out of it just in time to pull the cord for your stop.  Pushing past other riders, you step out on to the street and start walking.
 
@@ -61,7 +64,9 @@
         The door opens into a large atrium.  The high ceilings are gently slanted and dotted with skylights, and big potted plants stand against the walls.  Groups of visitors pass by, chatting amongst themselves.  Their talk echoes and each of your steps feels very loud.
         <br><br>You concentrate on remembering the way to the offices, head down.  The stairwell is quieter, and the staff-only hallway is near silent.  You try not to worry.
         <br><br><IMG SRC="images/hallway.png" width="300"/>
-        <br>You wander down the hall, looking for your supervisor's name on the placards at the doors.  You only make it a few feet when you almost bump into her, stumbling back and apologizing.  You realize you're a little late, but she's smiling and seems unbothered.
+        <br>You wander down the hall, looking for your supervisor's name on the placards at the doors.  <i>Maybe Kathie isn't her full name.  Should I be looking for 'Kathleen', or--</i>
+
+        <br><br>You only make it a few feet when you almost bump into her, stumbling back and apologizing.  You realize you're a little late, but she's smiling and seems unbothered.
         <br><br>Should you <a href="#" onclick="show('smile','go_inside');change_color(this)">smile back and greet her normally?</a> Or should you <a href="#" onclick="show('apologize','go_inside');change_color(this)">greet her respectfully and apologize for being late to your first shift?</a>
     </div>
     <div class="page" id="smile" style="display:none">
@@ -77,9 +82,153 @@
     <div class="page" id="oracle_bones" style="display:none">
         Upon hearing this, all your worries disappear, shoved out by excitement.  You bounce on the balls of your feet and try not to smile like a kid in a candy shop.  This is exactly what you'd hoped for when you applied for the job.  Your brain is already starting to think of various ways to frame the exhibit and tell a story about it.
 
-        <br><br>You barely register the fact that you're back in your supervisor's office.  She tells you to take lunch and meet her back here in half an hour so she can take you offsite.  Thanking her, you grab your sunhat and bag and <a href="#" onclick="show('lunch','oracle_bones');change_color(this)">head out in search of lunch.</a>
+        <br><br>You barely register the fact that you're back in your supervisor's office.  She tells you to take lunch and meet her back here in half an hour so she can take you offsite.  Thanking her, you grab your sunhat and bag and <a href="#" onclick="show('ch1','oracle_bones');change_color(this)">head out in search of lunch.</a>
     </div>
-    <div class="page" id="lunch" style="display:none">
+    <div class="page" id="ch1" style="display:none">
+        <i>August 29, 2022</i>
+        <br><i>Museum of the Written Record, Offsite Storage Facility</i>
+
+        <br><br>Time has flown as you've settled into your new job.  You've grown friendly with Ruby, another curator working with the oracle bones.  She's been kind enough to answer your questions about the <a href="#" onclick="show('exhibit','ch1');change_color(this)">exhibit</a> you're creating, and about the museum in general.  You have an idea of the temperaments of your boss and coworkers, supplemented by Ruby's experience.
+
+        <br><br>The two of you are in the stacks today, poring over bones.  There are far too many to all be included in the exhibit.  Most of them aren't very interesting, either – a lot of questions about the weather, agriculture, and sacrifice.  Dozens of them ask nothing more than "will this week be disastrous?".  You chuckle and show one to Ruby.
+
+        <br><br>"I ask myself that all the time, too," she snickers.
+
+        <br><br>You grin, reaching for another bone, when <a href="#" onclick="show('bone1','ch1');change_color(this)">something catches your eye…</a>
+    </div>
+    <div class="page" id="exhibit" style="display:none">
+        Currently in the schematic design phase, you and the other subject matter specialists are outlining the contents of the exhibit.  This is the most fun part.  "Outlining contents" sounds boring, but it actually means "getting to look at and handle materials all day".  In this case, the materials in question are the museum's collection of hundreds of oracle bones.  <i>I'm being paid to sit in archives and touch oracle bones all day!</i>
+
+        <br><br>You realize you're bouncing in your seat.  Best to <a href="#" onclick="show('ch1','exhibit');change_color(this)">return to the task at hand.</a>
+    </div>
+    <div class="page" id="bone1" style="display:none">
+        "Hey, this is more specific than the other ones – am I reading this right?"
+
+        <br><br>Ruby looks over your shoulder, humming in thought.  "I think so.  It's unusual to frame the question in a positive light... maybe that's significant."  You note down the acquisition number, adding it to a list of bones to consider including in the exhibit.  The bone's surface gleams under the bright lights of the workroom.
+
+        <br><br>You peer at it again, squinting.
+        <br><i>Will the <a href="#" onclick="show('shang','bone1');change_color(this)">Shang</a> thrive on in glory?</i>
+
+        <br><br>You look for a date in the preface but don't immediately see one.  When was this divined? The Shang certainly thrived for a time, but they eventually fell to the Zhou.  If the bone was created as the kingdom was <a href="#" onclick="show('dying','bone1');change_color(this)">dying</a>, it could make for an interesting story.
+    </div>
+    <div class="page" id="shang" style="display:none">
+        The Shang dynasty is arguably the period of ancient China most important to the Museum of the Written Record.  China's oldest writings date from the Shang dynasty, about 3,500 years ago.  What's known about those who preceded the Shang was learned from the works of historians writing more than 1,000 years later.  Most of the written records from the Shang dynasty are oracle bones – divination tools made from turtleshells and ox scapulas.  Oracle bones are the earliest surviving examples of one of the world's oldest writing systems.
+
+        <br><br><a href="#" onclick="show('bone1','shang');change_color(this)">But what were they saying about glory?</a>
+    </div>
+    <div class="page" id="dying" style="display:none">
+        You pause.
+
+        <br><br>Ruby had been telling you the other day that the museum has had fewer visitors in recent years.  The pandemic put many cultural institutions in danger, and the Museum of the Written Record was no exception.  The struggle to maintain community engagement during lockdown ate into the museum's funds – significantly.  In-person summer programming has helped the museum to recover, but things are still precarious.
+
+        <br><br>You glance again at the bone.  It glints back knowingly.
+        
+        <br><br><a href="#" onclick="show('okay','dying');change_color(this)"><i>Will the museum be okay?</i></a>
+
+        <br><br><a href="#" onclick="show('trouble','dying');change_color(this)"><i>...Or are we in trouble?</i></a>
+    </div>
+    <div class="page" id="okay" style="display:none">
+        You shake your head in hopes it will dispel those thoughts.  <i>We'll be fine.  We're fine.</i>
+        <br><i>...Right?</i>
+
+        <br><br>"Hey, Ruby?"
+
+        <br><br>Engrossed in her work, Ruby speaks with her eyes glued to a bone fragment.  "What's up?"
+
+        <br><br>"The museum is okay, right? Like in terms of programming and hours and visitors and just being able to stay open?"
+
+        <br><br>With a pained noise, Ruby puts down the bone and turns to you.  "...Honestly, I'm not so sure.  There are more people coming now than at the start of the year, but we're still not back to how things were before.  I don't know where things stand budget-wise.  I'm trying not to worry about it, but it's hard."
+
+        <br><br>You mull this over, chewing your lip and frowning.  It can't be all that bad, considering that they hired you recently.  There's enough money to maintain staffing, but what about everything else?
+
+        <br><br>Your mind wanders to the bone you found.  It asked if the Shang would <i>thrive</i>.  That means much more than simply getting by.  As things stand now, the museum is <i>surviving</i>.  Can you help it thrive? Is that even possible?
+
+        <br><br>Picking up the bone, you scoot over to where Ruby is hunched over the table, completely absorbed.  "I think I have an idea of <a href="#" onclick="show('ch2','okay');change_color(this)">what story to tell.</a>"
+    </div>
+    <div class="page" id="trouble" style="display:none">
+        You squeeze your hands tight, brows furrowed.  <i>We should be fine.  We're fine... we're just fine!</i>
+
+        <br><br>Unable to convince yourself, you sigh, defeated, and slump in your seat.
+
+        <br><br>"Hey, Ruby?"
+
+        <br><br>Engrossed in her work, Ruby speaks with her eyes glued to a bone fragment.  "What's up?"
+
+        <br><br>"I'm kind of worried about how the museum is doing.  We'd been talking about how more people are visiting now but it doesn't feel back to normal? I have no clue where things stand budget-wise, either."
+
+        <br><br>With a pained noise, Ruby puts down the bone and turns to you.  "I've been worried about that, too.  There's enough money to maintain staffing, but for everything else, I'm really not sure.  I doubt we can do much to help out anyway, even if the museum is in trouble."
+
+        <br><br>Your mind wanders to the bone you found.  It asked if the Shang would <i>thrive</i>.  That means much more than simply getting by.  As things stand now, the museum is <i>surviving</i>.  Can you help it thrive? Is that even possible?
+
+        <br><br>Picking up the bone, you scoot over to where Ruby is hunched over the table, completely absorbed.  "I think I have an idea of <a href="#" onclick="show('ch2','trouble');change_color(this)">what story to tell.</a>"
+    </div>
+    <div class="page" id="ch2" style="display:none">
+        <i>October 5, 2022</i>
+        <br><i>Museum of the Written Record, Curators' Office</i>
+
+        <br><br>You sigh loudly, your breath making papers rustle.  Groaning, you lift your head off of the desk and turn back to the computer.  Across from you, Ruby is "checking email" with a blank stare.  The shared office feels smaller than usual and the silence is deafening.  The outline is done, which is great, but now you have to figure out how to actually construct the exhibit in detail.  The outline put together by the team was ambitious.  You knew that, you all did.  But now, faced with the task of making a budget proposal, you've hit a wall.
+
+        <br><br>You whine to get Ruby's attention.  She looks tired.
+
+        <br><br>"Can we look for a grant for this? I'm not familiar with the process but I feel like it'll be less stressful in the long run.  There's no way we can pull all this off with what we have now."
+
+        <br><br>Ruby tilts her head in thought.  "That's not a bad idea, actually.  My only concern would be getting approval from Kathie."
+
+        <br><br>That is a concern indeed.   But that would be getting ahead of things -- you'd need to find a specific grant first in order to bring the proposal to your supervisor.
+
+        <br><br>You sit up straight and jiggle the mouse, waiting for the computer to wake back up.  Ruby has already tabbed away from her work email to start looking for grants.
+
+        <br><br>"We should probably get back to the budget soon.  For now... <a href="#" onclick="show('looking','ch2');change_color(this)">let's just see what we turn up.</a>"
+    </div>
+    <div class="page" id="looking" style="display:none">
+        Working on the budget has been easier lately.  For the past week or so, the two of you have spent an hour or two every day looking for grants.  Ruby found one yesterday that seems promising.  On paper, it's perfect -- a broad-scope grant for small cultural institutions.  It's not a huge amount of money, but it would relieve a lot of pressure.
+
+        <br><br>You look sideways at Ruby.  <i>What if Kathie says no?</i> You'd be back at square one.  All that time spent searching would be wasted.
+
+        <br><br>Halfheartedly, you scan the outline again.  The exhibit will focus on the final years of the Shang dynasty, when oracle bone use was at its peak.  Your eyes comb through acquisition numbers, passing over the bone fragment that inspired the idea.  You stop at a number penciled in after printing out the draft.  It looks like Ruby's handwriting.
+
+        <br><br>Curious, you pull it up in the catalog and wait for the images to load.  It's a little smaller than the first bone, with more visible damage from the heat of the brand.  You zoom in on the poor-quality image to <a href="#" onclick="show('bone2','looking');change_color(this)">see what it asked.</a>
+    </div>
+    <div class="page" id="bone2" style="display:none">
+        <i>Is it auspicious to conquer our neighboring state Gui?</i>
+
+        <br><br>Hm.  If you recall correctly, the Shang did conquer Gui.  The crack notations are very worn, and you can't tell from the picture whether it was auspicious or not.  Would that have mattered?  Prognostications rarely outright defied the king, but you doubt that inauspiciousness alone would stop plans for conquest.
+
+        <br><br>You glance at Ruby again.  The two of you are set on applying for this grant.  As curators, it wouldn't really be overstepping to just do it on your own.
+
+        <br><br><a href="#" onclick="show('permission','bone2');change_color(this)"><i>It might be better to ask for permission...</i></a>
+
+        <br><br><a href="#" onclick="show('secret','bone2');change_color(this)"><i>...but it might be easier to apply now by yourselves.</i></a>
+    </div>
+    <div class="page" id="permission" style="display:none">
+        You take a deep breath.  <i>This is a perfectly reasonable request.  Kathie has no reason not to support it.</i>
+
+        <br><br>"The next admin meeting is this Friday, right?"
+
+        <br><br>Ruby nods, half-listening.
+
+        <br><br>"Do you want to ask about the grant?"
+
+        <br><br>You have her full attention now.  She nods again.  "We'll need to make a slide deck.  It's more professional.  And we should give a heads-up that we'll be <a href="#" onclick="show('ch3','permission');change_color(this)">presenting something."</a>
+    </div>
+    <div class="page" id="secret" style="display:none">
+        You take a deep breath.  <i>This is a perfectly reasonable thing to do.  We're just supporting the exhibit.</i>
+
+        <br><br>"Why can't we just do it ourselves?"
+
+        <br><br>Ruby is only half listening.  "Do what?"
+
+        <br><br>"Apply for the grant.  We don't actually need permission or anything.  This is our exhibit."
+
+        <br><br>You have her full attention now.  She frowns.  "Even if we don't technically need permission, it's better to ask.  I'd rather have everyone's support than be secretive about it."
+
+        <br><br>You turn towards her, leaning forward.  "What if Kathie says no? We definitely can't apply then.  All our research will have been a waste of time."
+
+        <br><br>This makes Ruby pause.  You watch as she silently weighs the options.  She sighs and straightens up.
+
+        <br><br>"In that case, we should prioritize applying sooner rather than later... <a href="#" onclick="show('ch3','secret');change_color(this)">let's start gathering materials."</a>
+    </div>
+    <div class="page" id="ch3" style="display:none">
         Coming soon...
         <br><br>
         <a href="index.html">Return to Title</a>
